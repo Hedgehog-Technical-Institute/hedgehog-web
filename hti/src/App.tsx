@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import { useNavigate, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 
 
@@ -21,10 +22,13 @@ const App = () => {
 
   return (
     <>
-      <ScrollToTop/>
-      <main>
-        <Outlet/>
-      </main>
+      <div className='min-h-screen flex flex-col'>
+        <Navbar/>
+        <ScrollToTop/>
+        <main>
+          <Outlet/>
+        </main>
+      </div>
     </>
   )
 }
