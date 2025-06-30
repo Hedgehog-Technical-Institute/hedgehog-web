@@ -1,0 +1,8 @@
+# SO-, for this is where we're gonna have le epic dynamic routes, for cgs, arcindied, and whatnot.
+
+- hti.com/events
+- hti.com/events/[event-id]
+- hti.com/events/[event-id]/[game-id]
+
+> because of the nature of the range of different events we offer, one solution would be to just create different tsx Templates to for each one, and then further seperate them based on their theme. 
+> This way, we can have special themes for each event. Really the only thing that stays the same is how specific data is rendered.

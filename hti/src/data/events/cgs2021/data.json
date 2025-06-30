@@ -1,0 +1,49 @@
+{
+  "eventId": "cgs2021",
+  "name": "Chao Games Showcase 2021",
+  "year": 2021,
+  "games": [
+    {
+      "id": 0,
+      "slug": "buknight",
+      "title": "BuKnight: The Order of the Golden Crest (v0.6)",
+      "thumbnail": "https://static.wixstatic.com/media/9d822d_c8194824a49e43fe868480ffdb801d16~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cover.png",
+      "authors": {
+        "Project Lead" : "shrug"
+      },
+      "description": [
+        "The village of Carrottia is under attack from the wolves (again)... and they have company. It's up to the rookie Bonnie to save the day from this canine menace. Jump, slash and spin through the various tracks to fight back and recover the parts of Carrottia's sacred treasure: The Golden Crest.",
+        "BuKnight is a fun and speedy action-platformer mixing the late-90s era mascot fever with the mid-2000s indie game craze. Use your up- and downsmash attacks, as well as the special swirling move to hurl pain at your enemies or to change your momentum and dodge their attacks as your zoom past or towards them. Stay tuned and enjoy!",
+        "Features:",
+        "Cute 2D animals in a medieval setting Breakneck speed platforming Slashy-swirly action A password/cheat system Two areas with two stages. Completely inauthentic retro sound and visuals Changes from last year: New game engine: ENIGMA. New map layouts. New enemies. Retouched physics and particle system. Prayer: you can use it to restore health at checkpoints by pressing up. An AI framework for enemies and for allies fighting alongside you."
+      ],
+      "url": {
+        "forum": 0,
+        "download": "https://mega.nz/folder/sw0wXQyb#rOiN846IfUfzZWgMJyL3NA",
+        "steam": 0,
+        "gamejolt": 0,
+        "itchio": 0,
+        "roblox": 0,
+        "not_available": 0
+      },
+      "trailers": [
+        "https://video.wixstatic.com/video/9d822d_03459fd3a1a941aabdc9e4988745ba61/1080p/mp4/file.mp4"
+      ],
+      "screenshots": [
+        "https://static.wixstatic.com/media/9d822d_c8194824a49e43fe868480ffdb801d16~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cover.png",
+        "https://static.wixstatic.com/media/9d822d_4439488cdc6540ad896c8112d202d9b1~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_0.png",
+        "https://static.wixstatic.com/media/9d822d_df09453c646f438db6f761579e8373b7~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_1.png",
+        "https://static.wixstatic.com/media/9d822d_052e7d50c6a14cd8860117cb1b3b215a~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_2.png",
+        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_3.png",
+        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_4.png",
+        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_5.png",
+        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_6.png",
+        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_7.png",
+        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_8.png"
+      ]
+    },
+    {
+      
+    }
+  ]
+}
