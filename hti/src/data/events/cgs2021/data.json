@@ -3,7 +3,7 @@
   "eventSlug": "cgs2021",
   "name": "Chao Games Showcase 2021",
   "year": 2021,
-  "videos": [],
+  "media": [],
   "games": [
     {
       "id": 0,
@@ -28,7 +28,8 @@
         "gamejolt": 0,
         "itchio": 0,
         "roblox": 0,
-        "not_available": 0
+        "not_available": 0,
+        "website": 0
       },
       "trailers": [
         "https://video.wixstatic.com/video/9d822d_03459fd3a1a941aabdc9e4988745ba61/1080p/mp4/file.mp4"
@@ -58,8 +59,8 @@
       "slug": "mikeadventures",
       "title": "MiKe Adventures Round the World",
       "isFeatured": 0,
-      "thumbnail": "https://static.wixstatic.com/media/9d822d_c8194824a49e43fe868480ffdb801d16~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cover.png",
-      "brief": "A cute platformer with a bunny.",
+      "thumbnail": "https://static.wixstatic.com/media/9d822d_33727b62641542328139a2116c89b383~mv2.png/v1/fill/w_317,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MKAss1.png",
+      "brief": "A multiple-genre game where you visit an amusement park city on a floating island named the ``Axolotl Central Park,`` platforming through various set pieces based on emotions and everyday life situations while exploring the mysterious theme park's nooks and crannies.",
       "authors": {
         "Project Lead" : "shrug"
       },
@@ -73,28 +74,109 @@
         "gamejolt": 0,
         "itchio": 0,
         "roblox": 0,
-        "not_available": 0
+        "not_available": 0,
+        "website": 0
+
       },
       "trailers": [
         "https://video.wixstatic.com/video/9d822d_03459fd3a1a941aabdc9e4988745ba61/1080p/mp4/file.mp4"
       ],
       "screenshots": [
-        "https://static.wixstatic.com/media/9d822d_c8194824a49e43fe868480ffdb801d16~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cover.png",
-        "https://static.wixstatic.com/media/9d822d_4439488cdc6540ad896c8112d202d9b1~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_0.png",
-        "https://static.wixstatic.com/media/9d822d_df09453c646f438db6f761579e8373b7~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_1.png",
-        "https://static.wixstatic.com/media/9d822d_052e7d50c6a14cd8860117cb1b3b215a~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_2.png",
-        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_3.png",
-        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_4.png",
-        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_5.png",
-        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_6.png",
-        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_7.png",
-        "https://static.wixstatic.com/media/9d822d_4b4853453eb44bc896621798e1dfd59b~mv2.png/v1/fill/w_242,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/screenshot_8.png"
+        "https://static.wixstatic.com/media/9d822d_33727b62641542328139a2116c89b383~mv2.png/v1/fill/w_317,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MKAss1.png",
+        "https://static.wixstatic.com/media/9d822d_0f8588e5d9a84966801c011e34147946~mv2.png/v1/fill/w_317,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MKAss2.png",
+        "https://static.wixstatic.com/media/9d822d_35038e5ae07543c9ac298e70829b75ac~mv2.png/v1/fill/w_317,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MKAss3.png",
+        "https://static.wixstatic.com/media/9d822d_35038e5ae07543c9ac298e70829b75ac~mv2.png/v1/fill/w_317,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MKAss4.png",
+        "https://static.wixstatic.com/media/9d822d_35038e5ae07543c9ac298e70829b75ac~mv2.png/v1/fill/w_317,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MKAss5.png"
       ],
       "platforms": [
         "Windows"
       ],
       "tags": [
         "retro", "platformer", "2d"
+      ],
+      "version": "BETA"
+    },
+    {
+      "id": 2,
+      "slug": "soniclostinnightmareworld",
+      "title": "Sonic - Lost in Nightmare",
+      "isFeatured": 0,
+      "thumbnail": "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.png",
+      "brief": "A fangame based around the scrapped concepts of Sonic 1, combining some elements from the early prototypes.",
+      "authors": {
+        "Project Lead" : "Devy"
+      },
+      "description": [
+        "A fangame based around the scrapped concepts of Sonic 1, combing some elements from the early prototypes.",
+        "This basically takes major inspiration from early classic Sonic prototypes, concepts, etc."
+      ],
+      "url": {
+        "forum": 0,
+        "download": "https://mega.nz/folder/lgNCQb5J#30u__WzRE7cn41yF7mk38w",
+        "steam": 0,
+        "gamejolt": 0,
+        "itchio": 0,
+        "roblox": 0,
+        "not_available": 0,
+        "website": 0
+
+      },
+      "trailers": [
+        "https://www.youtube.com/watch?v=P42F9x7eCF4"
+      ],
+      "screenshots": [
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.png",
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.png",
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.png",
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4.png"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "tags": [
+        "retro", "platformer", "2d", "fangame", "sonic"
+      ],
+      "version": "BETA"
+    },
+    {
+      "id": 3,
+      "slug": "sonicfallenstar",
+      "title": "Sonic and the Fallen Star",
+      "isFeatured": 0,
+      "thumbnail": "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.png",
+      "brief": "A fangame based around the scrapped concepts of Sonic 1, combining some elements from the early prototypes.",
+      "authors": {
+        "Project Lead" : "StarDrop"
+      },
+      "description": [
+        "A fangame based around the scrapped concepts of Sonic 1, combing some elements from the early prototypes.",
+        "This basically takes major inspiration from early classic Sonic prototypes, concepts, etc."
+      ],
+      "url": {
+        "forum": 0,
+        "download": "https://mega.nz/folder/lgNCQb5J#30u__WzRE7cn41yF7mk38w",
+        "steam": 0,
+        "gamejolt": 0,
+        "itchio": 0,
+        "roblox": 0,
+        "not_available": 0,
+        "website": "https://stardropsmh.github.io/sonic-and-the-fallen-star/"
+
+      },
+      "trailers": [
+        "https://www.youtube.com/watch?v=P42F9x7eCF4"
+      ],
+      "screenshots": [
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.png",
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.png",
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.png",
+        "https://static.wixstatic.com/media/9d822d_e2740a75c29f45278a4aaaaa5ed7ef15~mv2.png/v1/fill/w_340,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4.png"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "tags": [
+        "retro", "platformer", "2d", "fangame", "sonic"
       ],
       "version": "BETA"
     }

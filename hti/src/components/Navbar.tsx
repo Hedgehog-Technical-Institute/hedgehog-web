@@ -6,13 +6,27 @@ const Navbar = () => {
 
   return (
     // pretty much copied and pasted from my portfolio site, will have to make adjustments as new HTI style is further realized - Nico/tm12
-    <header className="sticky top-0 w-full bg-[#000000] text-white py-4 z-50">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-5">
-        {/* LEFT */}
+    <header className="sticky top-0 w-full bg-[#f9ae0b] text-[#fdfdfd] py-3  ">
+      <div className="flex justify-around max-w-7xl mx-auto px-5">
+        {/* LEFT */} 
         <h1 className="text-3xl sm:text-5xl">
-          <Link to="/">Hedgehog Technical Institute</Link>
+          <Link to="/">
+            {/* Large logo for sm and above */}
+            <img
+              src="/logo/HTI_LOGO_FULL_NAME_OUTLINE.svg"
+              alt="Hedgehog Technical Institute"
+              className="hidden md:block h-25"
+            />
+            {/* Small logo for below sm */}
+            <img
+              src="/logo/HTI_ICON_FACE_WHITE.svg"
+              alt="Hedgehog Technical Institute"
+              className="block md:hidden h-25"
+            />           
+          </Link>
         </h1>
 
+        {/* RIGHT */}
         {/* Hamburger - Mobile only */}
         <button
           className="sm:hidden"
@@ -32,7 +46,7 @@ const Navbar = () => {
 
       {/* Mobile menu - toggles open */}
       {menuOpen && (
-        <nav className="sm:hidden px-5 pt-2 pb-4 bg-[#000000]">
+        <nav className="sm:hidden px-5 pt-2 pb-4 bg-[#f9ae0b]">
           <ul className="flex flex-col space-y-3 font-bold text-lg">
             <li><Link to="/events" onClick={() => setMenuOpen(false)}>Events</Link></li>
             <li><Link to="/Community" onClick={() => setMenuOpen(false)}>Community</Link></li>
