@@ -16,12 +16,12 @@ const Navbar = () => {
               <img
                 src="/logo/HTI_LOGO_FULL_NAME_OUTLINE.svg"
                 alt="Hedgehog Technical Institute"
-                className="hidden md:block h-[6rem]"
+                className="hidden md:block h-[5rem]"
               />
               <img
-                src="/logo/HTI_ICON_INVERTED.svg"
+                src="/logo/HTI_ICON_OUTLINE.svg"
                 alt="HTI Icon"
-                className="block md:hidden h-[6rem]"
+                className="block md:hidden h-[5rem]"
               />
             </Link>
           </h1>
@@ -42,9 +42,9 @@ const Navbar = () => {
 
           {/* Menu - Desktop */}
           <ul className="hidden sm:flex space-x-6 font-bold text-2xl font-hti font">
-            <li><Link to="/events">EVENTS</Link></li>
-            <li><Link to="/community">BLOG</Link></li>
-            <li><Link to="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</Link></li>
+            <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li>
+            <li className="transition-transform duration-200 hover:scale-105"><Link to="/community">COMMUNITY</Link></li>
+            <li className="transition-transform duration-200 hover:scale-105"><Link to="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</Link></li>
           </ul>
         </div>
       </div>

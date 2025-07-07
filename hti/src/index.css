@@ -1,8 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
+@import "tailwindcss";
 
+/* FONTS */
+@font-face {
+  font-family: 'Space-Grotesk';
+  src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'Daggersquare';
   src: url('./assets/fonts/DAGGERSQUARE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'V-Dub';
+  src: url('./assets/fonts/V\ Dub.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Advantage';
+  src: url('./assets/fonts/Advantage.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -14,26 +37,47 @@
   font-style: normal;
   font-display: swap;
 }
-
-@import "tailwindcss";
-
 :root {
   --font-spacegrotesk: "Space-Grotesk", sans-serif;
   --font-hti: "Daggersquare", sans-serif;
+  --font-arc: "V-Dub", sans-serif;
+  --font-current: "Advantage", sans-serif;
   --font-kimberly: "Kimberly", sans-serif;
 }
-
+.font-spacegrotesk {
+  font-family: var(--font-spacegrotesk);
+}
 .font-hti {
   font-family: var(--font-hti);
 }
-
-.font-regular {
-  font-family: var(--font-spacegrotesk);
+.font-arc {
+  font-family: var(--font-arc);
 }
-
+.font-current {
+  font-family: var(--font-current);
+}
 .font-kimberly {
   font-family: var(--font-kimberly);
 }
+
+
+/*  Shadows */
+.custom-shadow {
+  filter: drop-shadow(10px 10px 0px #f9ae0b); /* sharp yellow offset shadow */
+}
+
+
+/*  Animations (for when tailwind isnt enough) */
+.pop-out {
+  transition: transform 0.2s ease;
+}
+.pop-out:hover {
+  transform: scale(1.05);
+}
+.pop-out:active {
+  transform: scale(0.95);
+}
+
 
 /* Apply globally */
 p,
