@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import './index.css'
+// import './index.css'
 // import { createRoot } from 'react-dom/client'
 import ReactDOM from 'react-dom/client';
 import { router } from './routes/Routes';

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
+import './index.css'
 import ScrollToTop from './components/ScrollToTop'
 import { useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';

@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <h1 className="font-spacegrotesk text-2xl">Hedgehog Technical Institute</h1>
+      <h1 className="font-kimberly text-2xl">Hedgehog Technical Institute</h1>
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>

@@ -1,23 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-@import "tailwindcss";
+@font-face {
+  font-family: 'Daggersquare';
+  src: url('./assets/fonts/DAGGERSQUARE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'Kimberly';
-  src: url('/fonts/Kimberly.otf') format('opentype');
+  src: url('./assets/fonts/Kimberley.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@theme {
+@import "tailwindcss";
+
+:root {
   --font-spacegrotesk: "Space-Grotesk", sans-serif;
-  --font-kimberly: "Limberly", sans-serif;
+  --font-hti: "Daggersquare", sans-serif;
+  --font-kimberly: "Kimberly", sans-serif;
 }
 
+.font-hti {
+  font-family: var(--font-hti);
+}
 
-p, li{
-  font-family: "Space-Grotesk", sans-serif;
+.font-regular {
+  font-family: var(--font-spacegrotesk);
+}
 
+.font-kimberly {
+  font-family: var(--font-kimberly);
+}
+
+/* Apply globally */
+p,
+li {
+  font-family: var(--font-spacegrotesk);
 }
 
 html {
