@@ -44,21 +44,6 @@
   --font-current: "Advantage", sans-serif;
   --font-kimberly: "Kimberly", sans-serif;
 }
-.font-spacegrotesk {
-  font-family: var(--font-spacegrotesk);
-}
-.font-hti {
-  font-family: var(--font-hti);
-}
-.font-arc {
-  font-family: var(--font-arc);
-}
-.font-current {
-  font-family: var(--font-current);
-}
-.font-kimberly {
-  font-family: var(--font-kimberly);
-}
 
 
 /*  Shadows */
