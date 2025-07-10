@@ -20,11 +20,23 @@ const Home = () => {
           <button></button>
           <button></button>
         </div>
-      </section> 
+      </section>
+       {/* small descriiption of what hti is  */}
       <section className="flex justify-center items-center h-[30vh] bg-[#222222]"> {/* TE */}
+        <div>
+          <h2>What is HTI?</h2>
+          <p>A welcoming space for developers of all skill levels to collaborate, share ideas, and celebrate game creation. Join year-round events like game jams, showcases, game nights, and dev talks.</p>
+        </div>
+      </section>
+      {/* Grid describing cgs, arcindie. and grapejam */}
+      <section className="grid">
         <div>
 
         </div>
+
+        <div></div>
+
+        <div></div>
       </section>
 
     </>

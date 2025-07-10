@@ -37,6 +37,26 @@
   font-style: normal;
   font-display: swap;
 }
+
+@theme {
+  --font-spacegrotesk: "Space-Grotesk", sans-serif;
+  --font-hti: "Daggersquare", sans-serif;
+  --font-arc: "V-Dub", sans-serif;
+  --font-current: "Advantage", sans-serif;
+  --font-kimberly: "Kimberly", sans-serif;
+
+  --color-light: #fdfdfd;
+  --color-charcoal: #222222;
+  --color-ylw: #f9ae0b;
+  --color-grn: #0AFA91;
+  --color-blu: #0ADDFA;
+  --color-red: #ff0137;
+  --color-urpl: #AD07AE; 
+
+
+}
+
+
 :root {
   --font-spacegrotesk: "Space-Grotesk", sans-serif;
   --font-hti: "Daggersquare", sans-serif;
@@ -44,6 +64,7 @@
   --font-current: "Advantage", sans-serif;
   --font-kimberly: "Kimberly", sans-serif;
 }
+
 
 
 /*  Shadows */
