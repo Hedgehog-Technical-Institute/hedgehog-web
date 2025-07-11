@@ -42,7 +42,7 @@ const Navbar = () => {
 
           {/* Menu - Desktop */}
           <ul className="hidden sm:flex space-x-6 font-bold text-2xl font-hti font">
-            <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li>
+            {/* <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li> */}
             <li className="transition-transform duration-200 hover:scale-105"><Link to="/community">COMMUNITY</Link></li>
             <li className="transition-transform duration-200 hover:scale-105"><Link to="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</Link></li>
           </ul>
