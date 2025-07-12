@@ -1,22 +1,9 @@
 // import React from "react";
 // import { useState } from "react";
 import FeaturedShowcase from "../components/FeaturedSection";
+import HeroVideo from "../components/HeroVideo";
 
 
-const HeroVideo = () => {
-  return (
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="absolute top-0 bottom-0 left-0 object-cover w-full h-full pointer-events-none z-0"
-    >
-      <source src="/assets/hero.webm" type="video/webm" />
-      Your browser does not support the video tag.
-    </video>
-  )
-}
 
 const Home = () => {
   // const [count, setCount] = useState(0);
@@ -58,31 +45,31 @@ const Home = () => {
           <div className="w-xl h-xl flex justify content">
             <img
               className="max-w-[20rem]"
-              src="https://media.discordapp.net/attachments/1388251583539843102/1392903508298174634/arcindie_logo.png?ex=687139fb&is=686fe87b&hm=1431c26a617d81495b4b1d012bd5e869f4642623db3b17ff5ef819a854a51520&=&format=webp&quality=lossless&width=1872&height=780"
+              src="/assets/arcindie_logo.png"
               alt="ArcIndie Logo"
             />
           </div>
-          <p>ArcIndie</p>
+          <p>The macintosh was introduced in 1978, revolutionizing the world of computing and putting steve jobs ontop of the world. God his turtle neck was immaculate, I think I should get one myself. With that an an iPod, it'd look so epic!</p>
         </div>
         <div className="bg-red flex justify-center items-center text-center">
           <div className="">
             <img
               className="max-w-[20rem]"
-              src="https://media.discordapp.net/attachments/1388251583539843102/1392897732431057047/CGS_Logo.png?ex=6871349a&is=686fe31a&hm=ba6001e490c02642317859dcd777752f7edf19bd37e109a936d80a604191083f&=&format=webp&quality=lossless&width=1726&height=998"
+              src="/assets/arcindie_logo.png"
               alt="Chao Game Showcase logo"
             />
           </div>
-          <p>Chao Games Expo</p>
+          <p>The macintosh was introduced in 1978, revolutionizing the world of computing and putting steve jobs ontop of the world. God his turtle neck was immaculate, I think I should get one myself. With that an an iPod, it'd look so epic!</p>
         </div>
         <div className="bg-urpl flex justify-center items-center text-center">
           <div className="w-xl h-xl">
             <img
               className="max-w-[20rem]"
-              src="https://media.discordapp.net/attachments/1388251583539843102/1392897975746953317/CHAO_JAM_LOGO.png?ex=687134d4&is=686fe354&hm=f44a80e1bb039173e39a359df09696a4e10468533d533063662946f3ea68c238&=&format=webp&quality=lossless"
+              src="/assets/arcindie_logo.png"
               alt="Grape Jam Logo"
             />
           </div>
-          <p>Grape Jam</p>
+          <p>The macintosh was introduced in 1978, revolutionizing the world of computing and putting steve jobs ontop of the world. God his turtle neck was immaculate, I think I should get one myself. With that an an iPod, it'd look so epic!</p>
         </div>
       </section>
       {/* featured projects previously showcased */}
