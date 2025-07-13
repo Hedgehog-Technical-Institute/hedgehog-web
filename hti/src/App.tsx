@@ -4,7 +4,7 @@ import './index.css'
 import ScrollToTop from './components/ScrollToTop'
 import { useNavigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -29,6 +29,7 @@ const App = () => {
         <main>
           <Outlet/>
         </main>
+        <Footer/>
       </div>
     </>
   )

@@ -3,8 +3,6 @@
 import FeaturedShowcase from "../components/FeaturedSection";
 import HeroVideo from "../components/HeroVideo";
 
-
-
 const Home = () => {
   // const [count, setCount] = useState(0);
 
@@ -12,9 +10,8 @@ const Home = () => {
     <>
       {/* Hero */}
       <section className="relative flex justify-center items-center h-[calc(100vh-7rem)] overflow-hidden">
-        
-        <HeroVideo/> 
-        <div className="text-center bg-charcoal rounded-3xl p-[3vh] drop-shadow-none custom-shadow">
+        <HeroVideo />
+        <div className="text-center bg-charcoal rounded-3xl p-[3vh] drop-shadow-none custom-shadow m-4">
           <p className="text-3xl text-light font-bold font-spacegrotesk max-w-xl mx-auto my-[1vh]">
             We’re a community of indie and amateur game developers.
           </p>
@@ -40,41 +37,51 @@ const Home = () => {
         </div>
       </section>
       {/* Grid describing cgs, arcindie. and grapejam */}
-      <section className="grid grid-cols-1 md:grid-cols-3">
-        <div className="bg-grn flex justify-center items-center text-center">
-          <div className="w-xl h-xl flex justify content">
+      <section className="grid grid-cols-1 md:grid-cols-3 text-light font-black font-spacegrotesk">
+        {/* CGS */}
+        <div className="bg-cgs flex justify-center items-center text-center p-6 flex-col">
+          <div className="w-flex justify content m-7">
             <img
-              className="max-w-[20rem]"
-              src="/assets/arcindie_logo.png"
-              alt="ArcIndie Logo"
-            />
-          </div>
-          <p>The macintosh was introduced in 1978, revolutionizing the world of computing and putting steve jobs ontop of the world. God his turtle neck was immaculate, I think I should get one myself. With that an an iPod, it'd look so epic!</p>
-        </div>
-        <div className="bg-red flex justify-center items-center text-center">
-          <div className="">
-            <img
-              className="max-w-[20rem]"
-              src="/assets/arcindie_logo.png"
+              className="max-w-[15rem]"
+              src="/assets/cgs/cgs_min.svg"
               alt="Chao Game Showcase logo"
             />
           </div>
-          <p>The macintosh was introduced in 1978, revolutionizing the world of computing and putting steve jobs ontop of the world. God his turtle neck was immaculate, I think I should get one myself. With that an an iPod, it'd look so epic!</p>
+          <p className="text-3xl">
+          Chao Games Showcase celebrates game franchises through creative fangames.
+          </p>
         </div>
-        <div className="bg-urpl flex justify-center items-center text-center">
-          <div className="w-xl h-xl">
+        
+        {/* arcINDIE */}
+        <div className="bg-arc flex justify-center items-center text-center p-6 flex-col">
+          <div className="flex justify content m-7">
             <img
-              className="max-w-[20rem]"
-              src="/assets/arcindie_logo.png"
+              className="max-w-[15rem]"
+              src="/assets/arcindie/arc_min.svg"
+              alt="ArcIndie Logo"
+            />
+          </div>
+          <p className="text-3xl">
+            arcINDIE is an expo dedicated to upcoming indie games.
+          </p>
+        </div>
+        {/* GRAPE JAM */}
+        <div className="bg-jam flex justify-center items-center text-center p-6 flex-col">
+          <div className="flex justify content m-7">
+            <img
+              className="max-w-[15rem]"
+              src="/assets/gj/gj_min.svg"
               alt="Grape Jam Logo"
             />
           </div>
-          <p>The macintosh was introduced in 1978, revolutionizing the world of computing and putting steve jobs ontop of the world. God his turtle neck was immaculate, I think I should get one myself. With that an an iPod, it'd look so epic!</p>
+          <p className="text-3xl">
+            Grape Jam are annual Gamejams hosted on itch.io.
+          </p>
         </div>
       </section>
       {/* featured projects previously showcased */}
+            <FeaturedShowcase />
       <section>
-        <FeaturedShowcase />
       </section>
       {/* More misc stats */}
       <section></section>

@@ -101,7 +101,7 @@ const FeaturedShowcase = () => {
 
   return (
     <>
-    <div className="bg-light p-15">
+    <div className="bg-arc p-15">
       <h2>SHOWCASE</h2>
       <p>Take a look at some games that have been previously shown off.</p>
       <div className="flex flex-col md:flex-row items-around md:items-start gap-6 mx-auto">
