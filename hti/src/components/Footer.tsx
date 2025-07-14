@@ -1,13 +1,20 @@
-import { FaTwitter, FaDiscord, FaGoogleDrive, FaYoutube, FaEnvelope } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaDiscord,
+  FaGoogleDrive,
+  FaYoutube,
+  FaEnvelope,
+} from "react-icons/fa";
 import { SiBluesky } from "react-icons/si";
-
 
 const Footer = () => {
   return (
     <footer className="w-full bg-charcoal text-light py-4 px-6 z-50">
       <div className="max-w-6xl mx-auto flex flex-col justify-between items-center gap-4">
         {/* Left */}
-        <p className="text-sm">&copy; {new Date().getFullYear()} Hedgehog Technical Institute</p>
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} Hedgehog Technical Institute
+        </p>
 
         {/* Right - Social & contact links */}
         <div className="flex gap-6 text-xl">
@@ -68,6 +75,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 
 export default Footer;

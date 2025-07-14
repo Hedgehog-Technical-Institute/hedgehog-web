@@ -3,36 +3,37 @@
 
 /* FONTS */
 @font-face {
-  font-family: 'Space-Grotesk';
-  src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('opentype');
+  font-family: "Space-Grotesk";
+  src: url("./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Daggersquare';
-  src: url('./assets/fonts/DAGGERSQUARE.otf') format('opentype');
+  font-family: "Daggersquare";
+  src: url("./assets/fonts/DAGGERSQUARE.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'V-Dub';
-  src: url('./assets/fonts/V\ Dub.otf') format('opentype');
+  font-family: "V-Dub";
+  src: url("./assets/fonts/V\ Dub.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Advantage';
-  src: url('./assets/fonts/Advantage.ttf') format('opentype');
+  font-family: "Advantage";
+  src: url("./assets/fonts/Advantage.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Kimberly';
-  src: url('./assets/fonts/Kimberley.otf') format('opentype');
+  font-family: "Kimberly";
+  src: url("./assets/fonts/Kimberley.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -48,17 +49,14 @@
   --color-light: #fdfdfd;
   --color-charcoal: #171b24;
   --color-ylw: #f9ae0b;
-  --color-grn: #0AFA91;
-  --color-blu: #0ADDFA;
+  --color-grn: #0afa91;
+  --color-blu: #0addfa;
   --color-red: #ff0137;
-  --color-urpl: #13062D; 
-  --color-arc: #5005BA;
-  --color-jam: #E80F6B;
-  --color-cgs: #18D7B4 ;
-
-
+  --color-urpl: #13062d;
+  --color-arc: #5005ba;
+  --color-jam: #e80f6b;
+  --color-cgs: #18d7b4;
 }
-
 
 :root {
   --font-spacegrotesk: "Space-Grotesk", sans-serif;
@@ -68,8 +66,6 @@
   --font-kimberly: "Kimberly", sans-serif;
 }
 
-
-
 /*  Shadows */
 .custom-shadow {
   filter: drop-shadow(10px 10px 0px #f9ae0b); /* sharp yellow offset shadow */
@@ -77,7 +73,6 @@
 .custom-shadow-2 {
   filter: drop-shadow(10px 10px 0px #171b24); /* sharp yellow offset shadow */
 }
-
 
 /*  Animations (for when tailwind isnt enough) */
 .pop-out {
@@ -89,7 +84,6 @@
 .pop-out:active {
   transform: scale(0.95);
 }
-
 
 /* Apply globally */
 p,

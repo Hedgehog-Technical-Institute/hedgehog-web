@@ -1,11 +1,10 @@
-import { useEffect } from 'react'
-import { Outlet } from 'react-router-dom'
-import './index.css'
-import ScrollToTop from './components/ScrollToTop'
-import { useNavigate, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
+import { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import "./index.css";
+import ScrollToTop from "./components/ScrollToTop";
+import { useNavigate, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const navigate = useNavigate();
@@ -13,26 +12,25 @@ const App = () => {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const redirectPath = params.get('redirect');
-    if (redirectPath && location.pathname === '/') {
+    const redirectPath = params.get("redirect");
+    if (redirectPath && location.pathname === "/") {
       // Remove query param and navigate to correct path
       navigate(redirectPath, { replace: true });
     }
-  }, [navigate, location])
-
+  }, [navigate, location]);
 
   return (
     <>
-      <div className='min-h-screen flex flex-col'>
-        <Navbar/>
-        <ScrollToTop/>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <ScrollToTop />
         <main>
-          <Outlet/>
+          <Outlet />
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
