@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* <li className="transition-transform duration-200 hover:scale-105"><Link to="/community">COMMUNITY</Link></li> */}
             {/* https://discord.gg/PctwSxXDkx */}
             <li className="transition-transform duration-200 hover:scale-105"><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer">DISCORD</a></li>
-            <li className="transition-transform duration-200 hover:scale-105"><Link to="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</Link></li>
+            <li className="transition-transform duration-200 hover:scale-105"><a href="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</a></li>
           </ul>
         </div>
       </div>
@@ -58,6 +58,7 @@ const Navbar = () => {
             {/* <li><Link to="/events" onClick={() => setMenuOpen(false)}>EVENTS</Link></li> */}
             {/* <li><Link to="/Community" onClick={() => setMenuOpen(false)}>COMMUNITY</Link></li> */}
             <li><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>DISCORD</a></li>
+            <li><a href="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</a></li>
             <li><Link to="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</Link></li>
           </ul>
         </nav>
