@@ -106,20 +106,22 @@ const FeaturedShowcase = () => {
   }, []);
   const current = featuredData[game];
 
-
-
-
-
   return (
     <section className="bg-ylw px-8 py-16">
       <div className="max-w-[400rem] mx-auto px-5 text-charcoal">
         <h2 className="text-5xl font-spacegrotesk mb-4">FEATURED</h2>
-        <p className="text-lg mb-12">Take a look at some games that have been previously shown off.</p>
+        <p className="text-lg mb-12">
+          Take a look at some games that have been previously shown off.
+        </p>
 
-        <div className="flex flex-col md:flex-row gap-10 items-stretch transition-opacity duration-500" style={{ opacity: fade ? 1 : 0 }}>
+        <div className="flex flex-col md:flex-row gap-10 items-stretch">
           {/* Left - Image and basic info */}
           <div className="md:w-1/2 space-y-4">
-            <div className="overflow-hidden rounded-xl shadow-lg">
+            <div
+              className={`overflow-hidden rounded-xl shadow-lg transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}
+            >
               <img
                 src={current.screenshot}
                 alt={`${current.title} screenshot.`}
@@ -128,18 +130,34 @@ const FeaturedShowcase = () => {
             </div>
           </div>
 
-          {/* Right - Description and button */}
+          {/* Right - Text content */}
           <div className="md:w-1/2 flex flex-col justify-between">
-            <div className="my-4">
-              <h3 className="font-black text-3xl font-spacegrotesk text-center md:text-right">{current.title}</h3>
-              <p className=" text-xl text-center md:text-right">{current.author}</p>
-              <p className=" text-xl italic text-center md:text-right">{current.event}</p>
+            <div
+              className={`transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <div className="my-4">
+                <h3 className="font-black text-3xl font-spacegrotesk text-center md:text-right">
+                  {current.title}
+                </h3>
+                <p className="text-xl text-center md:text-right">
+                  {current.author}
+                </p>
+                <p className="text-xl italic text-center md:text-right">
+                  {current.event}
+                </p>
+              </div>
+              <p className="text-2xl leading-relaxed text-center md:text-right">
+                {current.description}
+              </p>
             </div>
-            <p className="text-2xl  leading-relaxed text-center md:text-right">{current.description}</p>
+
+            {/* Learn More button (NOT fading) */}
             <div className="mt-6 text-center md:text-right">
               <a
                 href={current.learn_more}
-                className="inline-block text-xl font-semibold px-6 py-3 bg-cgs  rounded-full custom-shadow-2 hover:bg-light transition duration-300"
+                className="inline-block text-xl font-semibold px-6 py-3 bg-cgs rounded-full custom-shadow-2 hover:bg-light transition duration-300"
               >
                 Learn More
               </a>
@@ -149,7 +167,6 @@ const FeaturedShowcase = () => {
       </div>
     </section>
   );
-  
 };
 
 export default FeaturedShowcase;

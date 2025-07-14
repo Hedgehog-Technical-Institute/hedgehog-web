@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
         // {path: "/events", element: <Events/>},
         // {path: "/events/:eventId", element: <Event/>},
         // {path: "/events/:eventId/:gameId", element: <Game/>},
-        {path: "/community", element: <Community/>},
+        // {path: "/community", element: <Community/>},
         // etc etc
         {path:"*", element: <PageNotFound/>}
       ]

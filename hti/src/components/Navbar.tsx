@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     // pretty much copied and pasted from my portfolio site, will have to make adjustments as new HTI style is further realized - Nico/tm12
-    <nav className="sticky top-0 w-full bg-[#f9ae0b] text-[#fdfdfd] h-[7rem] z-50">
+    <nav className="sticky top-0 w-full bg-ylw text-light h-[7rem] z-50">
      <div className="flex items-center h-full w-full mx-auto px-5">
         {/* LEFT */} 
         <div className="ml-[3rem] transition-transform duration-200 hover:scale-105">
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile menu - toggles open */}
       {menuOpen && (
-        <nav className="sm:hidden px-5 pt-2 pb-4 bg-[#f9ae0b]">
+        <nav className="sm:hidden px-5 pt-2 pb-4 bg-ylw">
           <ul className="flex flex-col space-y-3 font-bold text-lg">
             {/* <li><Link to="/events" onClick={() => setMenuOpen(false)}>EVENTS</Link></li> */}
             {/* <li><Link to="/Community" onClick={() => setMenuOpen(false)}>COMMUNITY</Link></li> */}
