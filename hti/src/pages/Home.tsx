@@ -38,7 +38,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="inline-block bg-cgs text-charcoal text-md font-bold font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw transition duration-300"
                 >
-                  Submit Promo Material
+                  Submit Trailer
                 </a>
                 <a
                   href="https://www.hedgehogtechnicalinstitute.com/forum/viewforum.php?f=8"
@@ -67,7 +67,7 @@ const Home = () => {
           {/* Stats grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full text-light font-spacegrotesk">
             <div className="border-t border-light pt-4">
-              <p className="text-2xl font-bold">100+</p>
+              <p className="text-2xl font-bold">300+</p>
               <p className="text-sm uppercase tracking-wide mt-1">Members</p>
             </div>
             <div className="border-t border-light pt-4">
