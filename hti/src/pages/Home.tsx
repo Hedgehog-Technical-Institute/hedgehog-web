@@ -22,18 +22,33 @@ const Home = () => {
         </div>
       </section>
       {/* brief descriiption of what hti is */}
-      <section className="flex justify-center items-center p-4 text-light bg-charcoal text-center py-4">
-        {" "}
-        {/* TE */}
-        <div className="my-8">
-          <h2 className="text-3xl text-bold font-spacegrotesk m-2.5">
-            What is HTI?
-          </h2>
-          <p className="text-2xl m-2xl max-w-5xl">
+      <section className="flex flex-col items-center text-light bg-charcoal py-12 px-4 text-center">
+        <div className="max-w-5xl">
+          <h2 className="text-3xl font-bold font-spacegrotesk mb-4">What is HTI?</h2>
+          <p className="text-2xl mb-8">
             A welcoming space for developers of all skill levels to collaborate,
             share ideas, and celebrate game creation. Join year-round events
             like game jams, showcases, game nights, and dev talks.
           </p>
+          {/* Stats grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full text-light font-spacegrotesk">
+            <div className="border-t border-light pt-4">
+              <p className="text-2xl font-bold">100+</p>
+              <p className="text-sm uppercase tracking-wide mt-1">Members</p>
+            </div>
+            <div className="border-t border-light pt-4">
+              <p className="text-2xl font-bold">Game Expos</p>
+              <p className="text-sm uppercase tracking-wide mt-1">Indie & Fan Projects</p>
+            </div>
+            <div className="border-t border-light pt-4">
+              <p className="text-2xl font-bold">Annual Jam</p>
+              <p className="text-sm uppercase tracking-wide mt-1">Community Game Jam</p>
+            </div>
+            <div className="border-t border-light pt-4">
+              <p className="text-2xl font-bold">INDIE</p>
+              <p className="text-sm uppercase tracking-wide mt-1">Dev Support</p>
+            </div>
+          </div>
         </div>
       </section>
       {/* Grid describing cgs, arcindie. and grapejam */}
@@ -86,7 +101,7 @@ const Home = () => {
       {/* More misc stats */}
       <section></section>
       {/* Buttons to socials */}
-      <section></section>
+      {/* <section></section> */}
     </>
   );
 };
