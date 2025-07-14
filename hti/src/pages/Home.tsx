@@ -9,18 +9,49 @@ const Home = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex justify-center items-center h-[calc(100vh-7rem)] overflow-hidden">
-        <HeroVideo />
-        <div className="text-center bg-charcoal rounded-3xl p-[3vh] drop-shadow-none custom-shadow m-4">
-          <p className="text-3xl text-light font-bold font-spacegrotesk max-w-xl mx-auto my-[1vh]">
-            We’re a community of indie and amateur game developers.
-          </p>
-          <p className="text-2xl text-light font-spacegrotesk max-w-xl mx-auto my-[1vh]">
-            We’ve hosted virtual expos for indie games and hobbyist fan games
-            each year since 2021.
-          </p>
+      <section className="relative h-[calc(100vh-7rem)] overflow-hidden">
+  {/* Video should sit in the background */}
+  <div className="absolute inset-0 z-0">
+    <HeroVideo />
+  </div>
+
+  {/* Foreground content */}
+  <div className="relative z-10 flex justify-center items-center h-full px-4">
+    <div className="text-center bg-charcoal rounded-3xl p-[3vh] custom-shadow m-4 max-w-3xl w-full">
+      <p className="text-3xl text-light font-bold font-spacegrotesk my-[1vh]">
+        We’re a community of indie and amateur game developers.
+      </p>
+      <p className="text-2xl text-light font-spacegrotesk my-[1vh]">
+        We’ve hosted virtual expos for indie games and hobbyist fan games each year since 2021.
+      </p>
+
+      {/* Announcement Buttons */}
+      <div className="mt-6 bg-light p-3 custom-shadow rounded-3xl">
+        <p className="text-3xl font-bold text-charcoal mb-2">
+          Applications for arcINDIE & CGS 2025 are now open!
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="https://docs.google.com/forms/d/1WWscmOoRiX-ShOFWKhTczj1atlOdEM7FMFqvNpN-G24"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-cgs text-charcoal text-md font-bold font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw transition duration-300"
+          >
+            Submit Promo Material
+          </a>
+          <a
+            href="https://www.hedgehogtechnicalinstitute.com/forum/viewforum.php?f=8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-cgs text-charcoal text-md font-bold font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw transition duration-300"
+          >
+            Submit Booth
+          </a>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
       {/* brief descriiption of what hti is */}
       <section className="flex flex-col items-center text-light bg-charcoal py-12 px-4 text-center">
         <div className="max-w-5xl">

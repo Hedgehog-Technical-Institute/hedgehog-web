@@ -37,13 +37,15 @@ const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            {menuOpen ? <p className='font-bold text-lg'>X</p>  : <p className='font-bold text-lg'>MENU</p>}
+            {menuOpen ? <p className='font-bold text-xl'>X</p>  : <p className='font-bold text-xl'>MENU</p>}
           </button>
 
           {/* Menu - Desktop */}
           <ul className="hidden sm:flex space-x-6 font-bold text-2xl font-hti font">
             {/* <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li> */}
             {/* <li className="transition-transform duration-200 hover:scale-105"><Link to="/community">COMMUNITY</Link></li> */}
+            {/* https://discord.gg/PctwSxXDkx */}
+            <li className="transition-transform duration-200 hover:scale-105"><Link to="https://discord.gg/PctwSxXDkx">DISCORD</Link></li>
             <li className="transition-transform duration-200 hover:scale-105"><Link to="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</Link></li>
           </ul>
         </div>
@@ -55,6 +57,7 @@ const Navbar = () => {
           <ul className="flex flex-col space-y-3 font-bold text-lg">
             {/* <li><Link to="/events" onClick={() => setMenuOpen(false)}>EVENTS</Link></li> */}
             {/* <li><Link to="/Community" onClick={() => setMenuOpen(false)}>COMMUNITY</Link></li> */}
+            <li><Link to="https://discord.gg/PctwSxXDkx" onClick={() => setMenuOpen(false)}>DISCORD</Link></li>
             <li><Link to="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</Link></li>
           </ul>
         </nav>
