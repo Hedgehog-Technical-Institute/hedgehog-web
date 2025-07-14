@@ -45,7 +45,7 @@ const Navbar = () => {
             {/* <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li> */}
             {/* <li className="transition-transform duration-200 hover:scale-105"><Link to="/community">COMMUNITY</Link></li> */}
             {/* https://discord.gg/PctwSxXDkx */}
-            <li className="transition-transform duration-200 hover:scale-105"><Link to="https://discord.gg/PctwSxXDkx">DISCORD</Link></li>
+            <li className="transition-transform duration-200 hover:scale-105"><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer">DISCORD</a></li>
             <li className="transition-transform duration-200 hover:scale-105"><Link to="https://hedgehogtechnicalinstitute.com/forum/">FORUMS</Link></li>
           </ul>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <ul className="flex flex-col space-y-3 font-bold text-lg">
             {/* <li><Link to="/events" onClick={() => setMenuOpen(false)}>EVENTS</Link></li> */}
             {/* <li><Link to="/Community" onClick={() => setMenuOpen(false)}>COMMUNITY</Link></li> */}
-            <li><Link to="https://discord.gg/PctwSxXDkx" onClick={() => setMenuOpen(false)}>DISCORD</Link></li>
+            <li><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>DISCORD</a></li>
             <li><Link to="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</Link></li>
           </ul>
         </nav>
