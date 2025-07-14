@@ -30,7 +30,7 @@ const featuredData: FeaturedGame[] = [
     author: "Ultra Ring Team",
     event: "Chao Games Showcase 2023",
     screenshot:
-      "https://media.discordapp.net/attachments/543045834904829952/1394095866343854141/GW5qCmHXIAAtgB9.png?ex=68759073&is=68743ef3&hm=557765b9709b0aabffb6b26c1021ac77b6575c0ab4e6790e3d1001da6456cc1d&=&format=webp&quality=lossless&width=1027&height=581",
+      "/assets/featured/sonic-legends.png",
     description:
       "Sonic Legends is an unofficial, non-profit fan project inspired by the 2D Sonic the Hedgehog series of games. Its main goal is to update and re-invent over 20 year of history within the Sonic fangaming scene.",
     learn_more:
@@ -42,7 +42,7 @@ const featuredData: FeaturedGame[] = [
     author: "Miles Games",
     event: "Chao Games Showcase 2023",
     screenshot:
-      "https://media.discordapp.net/attachments/543045834904829952/1394096098402111598/image.png?ex=687590aa&is=68743f2a&hm=a87b0ffd837a5769d91aa3bd989c2a213ecf96f0706cb467fade67112bec03ba&=&format=webp&quality=lossless&width=1027&height=578",
+      "/assets/featured/bubs-big-blow.png",
     description:
       "Bub and his friends seem to have found themselves lost in a strange new world! Everything is so familiar, yet so different! Will you be able to help Bub and his friends find their way home?",
     learn_more:
@@ -54,7 +54,7 @@ const featuredData: FeaturedGame[] = [
     author: "Arrietty",
     event: "arcINDIE 2024",
     screenshot:
-      "https://media.discordapp.net/attachments/543045834904829952/1394096300777144391/image.png?ex=687590db&is=68743f5b&hm=9d607e0a606fc706c19000d751fbd7ec522beb9ec080396b3f1332362530df41&=&format=webp&quality=lossless&width=1027&height=578",
+      "/assets/featured/prototype-n.png",
     description:
       "Prototype N is a side-scrolling shooting platformer. Nadine's main actions are shooting and sliding through action-packed stages.",
     learn_more:
@@ -66,7 +66,7 @@ const featuredData: FeaturedGame[] = [
     author: "Louplayer",
     event: "Chao Games Showcase 2023",
     screenshot:
-      "https://media.discordapp.net/attachments/543045834904829952/1394096403026022490/F_t22_TXEAA9JKZ.png?ex=687590f3&is=68743f73&hm=601ce06ad4e5108cf7f3dd54ee727eb5ef5a3a7560015a5517cf94c85fa7049f&=&format=webp&quality=lossless&width=704&height=528",
+      "/assets/featured/tails-picross.png",
     description:
       "Tails' Picross is a fangame inspired by the Picross game series and other Mega Drive puzzle games. In this game, you will need to clear puzzles using the clues on each row and each collumn of the grid.",
     learn_more:
@@ -78,7 +78,7 @@ const featuredData: FeaturedGame[] = [
     author: "Giga6152",
     event: "arcINDIE 2024",
     screenshot:
-      "https://media.discordapp.net/attachments/543045834904829952/1394095701369290824/ss_1b115ad258989f023dbd636a859b83b41388ede2.png?ex=6875904c&is=68743ecc&hm=752d40c1a4012ead74df0ed7d2e41161183fa04efe34b4f886a690ce847bbd89&=&format=webp&quality=lossless&width=1027&height=578",
+      "/assets/featured/verdilla.png",
     description:
       "Veredilia: The Sacred Forest is a 2D platforming game that takes inspiration from classic platformers such as Sonic, and fighting games like Mortal Kombat.",
     learn_more:
