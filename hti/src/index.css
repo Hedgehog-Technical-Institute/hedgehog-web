@@ -74,6 +74,9 @@
 .custom-shadow {
   filter: drop-shadow(10px 10px 0px #f9ae0b); /* sharp yellow offset shadow */
 }
+.custom-shadow-2 {
+  filter: drop-shadow(10px 10px 0px #171b24); /* sharp yellow offset shadow */
+}
 
 
 /*  Animations (for when tailwind isnt enough) */
