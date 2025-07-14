@@ -27,7 +27,7 @@ type FeaturedGame = {
 const featuredData: FeaturedGame[] = [
   {
     title: "Sonic Legends",
-    author: "Ultra Ring Team",
+    author: "Ultra Ring",
     event: "Chao Games Showcase 2023",
     screenshot:
       "/assets/featured/sonic-legends.png",
