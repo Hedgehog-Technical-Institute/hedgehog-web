@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* <li><Link to="/Community" onClick={() => setMenuOpen(false)}>COMMUNITY</Link></li> */}
             <li><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>DISCORD</a></li>
             <li><a href="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</a></li>
-            <li><Link to="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</Link></li>
+            {/* <li><Link to="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</Link></li> */}
           </ul>
         </nav>
       )}
