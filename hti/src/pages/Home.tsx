@@ -27,7 +27,7 @@ const Home = () => {
             </p>
 
             {/* Announcement Buttons */}
-            <div className="mt-6 bg-light p-3 custom-shadow rounded-3xl">
+            {/* <div className="mt-6 bg-light p-3 custom-shadow rounded-3xl">
               <p className="text-3xl font-bold text-charcoal mb-2">
                 Applications for arcINDIE & CGS 2025 are now open!
               </p>
@@ -49,7 +49,7 @@ const Home = () => {
                   Submit Booth
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
