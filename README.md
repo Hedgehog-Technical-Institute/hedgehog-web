@@ -6,4 +6,4 @@ Website created and maintained by [tailsmonster](https://github.com/tailsmonster
 
 
 
-![behold the hedgehog](https://files.slack.com/files-pri/TKZN62HDF-F096DACA4SK/screenshot_20250721_180736_discord.jpg)
+![behold the hedgehog](doc/bth.jpg)
