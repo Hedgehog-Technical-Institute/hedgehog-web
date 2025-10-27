@@ -5,6 +5,7 @@
 export type GameUrls = {
   booth?: string | null;
   steam?: string | null;
+  steamwishlist?: string | null;
   gamejolt?: string | null;
   itchio?: string | null;
   gamebanana?: string | null;
@@ -20,25 +21,28 @@ export type GameUrls = {
 
 // Game: Every Submission for all HTI events
 export class Game {
-slug: string;
-id: number;
-title: string;
-brief: string;
-authors: Record<string, string>;
-description: string[];
-thumbnail: string;
-trailers: string[];      // mp4 or YouTube links
-screenshots: string[];   // resolved URLs to images/gifs
-platforms: string[];
-tags: string[];
-version: string;
-urls: GameUrls;
-isFeatured: boolean;
-isBoothAvailable: boolean;
-isPlayable: boolean;
+
+  private static nextID = 0;
+  id: number;
+  slug: string;
+  title: string;
+  brief: string;
+  authors: Record<string, string>;
+  description: string[];
+  thumbnail: string;
+  trailers: string[];      // mp4 or YouTube links
+  screenshots: string[];   // resolved URLs to images/gifs
+  logo: string[];
+  icon: string[];
+  platforms: string[];
+  tags: string[];
+  version: string;
+  urls: GameUrls;
+  isFeatured: boolean;
+  isBoothAvailable: boolean;
+  isPlayable: boolean;
 
 constructor(
-  id: number,
   slug: string,
   title: string,
   brief: string,
@@ -47,6 +51,8 @@ constructor(
   thumbnail: string,
   trailers: string[],
   screenshots: string[],
+  logo: string[],
+  icon: string[],
   platforms: string[],
   tags: string[],
   version: string,
@@ -55,7 +61,7 @@ constructor(
   isBoothAvailable: boolean = false,
   isPlayable: boolean = false
   ) {
-    this.id = id;
+    this.id = Game.nextID++;
     this.slug = slug;
     this.title = title;
     this.brief = brief;
@@ -64,6 +70,8 @@ constructor(
     this.thumbnail = thumbnail;
     this.trailers = trailers;
     this.screenshots = screenshots;
+    this.logo = logo;
+    this.icon = icon;
     this.platforms = platforms;
     this.tags = tags;
     this.version = version;
@@ -76,6 +84,7 @@ constructor(
 
 // Event: Every HTI event ingo.
 export class Event {
+  private static nextID = 0;
   eventId: number;
   eventSlug: string;
   name: string;
@@ -88,7 +97,6 @@ export class Event {
   games: Game[];
 
   constructor(
-    eventId: number,
     eventSlug: string,
     name: string,
     brief: string,
@@ -100,7 +108,7 @@ export class Event {
     games: Game[],
 
   ) {
-    this.eventId = eventId;
+    this.eventId = Event.nextID++;
     this.eventSlug = eventSlug;
     this.name = name;
     this.brief = brief;
@@ -112,3 +120,6 @@ export class Event {
     this.games = games;
   }
 }
+
+// TODO (future improvement):
+// - Add a slugfallback so ids remain persistent between builds

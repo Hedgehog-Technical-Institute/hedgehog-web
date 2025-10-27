@@ -7,11 +7,14 @@ import cgs21Data from './events/cgs2021/data.json'
 // ChaoJam 2024
 // ChaoGamesExpo 2024
 // ArcIndie 2024
+// ChaoGamesExpo 2025
+// import CGS25Layout from "./events/cgs2025/Layout";
+// import cgs21Data from './events/cgs2021/data.json'
 
 export const eventDataMap = {
-  cgs2021: {
-    id: 0,
-    name: cgs21Data.name,
+  cgs2025: {
+    id: 6,
+    name: "Chao Games Showcase 2021",
     layout: CGS21Layout,
     data: cgs21Data
   }, 
