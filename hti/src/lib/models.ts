@@ -42,24 +42,24 @@ export class Game {
   isBoothAvailable: boolean;
   isPlayable: boolean;
 
-constructor(
-  slug: string,
-  title: string,
-  brief: string,
-  authors: Record<string, string>,
-  description: string[],
-  thumbnail: string,
-  trailers: string[],
-  screenshots: string[],
-  logo: string[],
-  icon: string[],
-  platforms: string[],
-  tags: string[],
-  version: string,
-  urls: GameUrls,
-  isFeatured: boolean = false,
-  isBoothAvailable: boolean = false,
-  isPlayable: boolean = false
+  constructor(
+    slug: string,
+    title: string,
+    brief: string,
+    authors: Record<string, string>,
+    description: string[],
+    thumbnail: string,
+    trailers: string[],
+    screenshots: string[],
+    logo: string[],
+    icon: string[],
+    platforms: string[],
+    tags: string[],
+    version: string,
+    urls: GameUrls,
+    isFeatured: boolean = false,
+    isBoothAvailable: boolean = false,
+    isPlayable: boolean = false
   ) {
     this.id = Game.nextID++;
     this.slug = slug;
