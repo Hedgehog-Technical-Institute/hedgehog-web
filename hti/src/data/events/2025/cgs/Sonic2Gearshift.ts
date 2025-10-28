@@ -37,7 +37,7 @@ const description: string[] = [
   `Sonic the Hedgehog 2: Gear Shift (previously known as Sonic 2 SMS/GG 16-Bit) or it's alternative JP subtitle: Running for Miles, is a re-imagining of Sonic the Hedgehog 2 for the Sega Master System and Game Gear, updated with 16-Bit graphics inspired by those of the likes of Sonic 2 and Sonic CD. The goal of this project to bring out the best aspects of the original game, while correcting major issues and bringing some new ideas to the table.`,
   `This demo features 2 zones to play, Under Ground Zone and Sky High Zone!`,
   ``,
-  `Plot Synopsis`,
+  `Plot Synopsis:`,
   `Shortly following his first journey across South Island, Sonic the Hedgehog relishes in the peaceful aftermath of his encounter with Dr. Ivo Robotnik.`,
   `Some time relaxing later though, he opens one eye to find no sign of any of his flicky friends... Before he let that thought linger, the hedgehog hears something swoosh by, looking to only see Dr. Robotnik chasing after his new friend, Miles "Tails" Prower!`,
   `Try as he might, Sonic could only catch up just in time to see the mad doctor snatch his buddy and take off, only leaving a note written by the diabolical doctor behind, taunting the hedgehog that he is holding Tails hostage in the Crystal Egg Zone in exchange for the six Chaos Emeralds!`,
