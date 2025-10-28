@@ -1,28 +1,18 @@
-// ChaoGamesExpo 2021
-import CGS21Layout from "./events/cgs2021/Layout";
-import cgs21Data from './events/cgs2021/data.json'
-// ChaoJam 2023
-// ChaoGamesExpo 2023
-// Indie'd 2023
-// ChaoJam 2024
-// ChaoGamesExpo 2024
-// ArcIndie 2024
-// ChaoGamesExpo 2025
-// import CGS25Layout from "./events/cgs2025/Layout";
-// import cgs21Data from './events/cgs2021/data.json'
+// src/data/event-data.ts
+import type { Event as EventModel } from "../lib/models";
+import CGS25Layout from "./events/2025/cgs/Layout"; // bare layout below
+import { CGS2025 } from "./events/2025/cgs/index";
 
 export const eventDataMap = {
   cgs2025: {
     id: 6,
-    name: "Chao Games Showcase 2021",
-    layout: CGS21Layout,
-    data: cgs21Data
-  }, 
-  // and so on and so forth-
+    name: CGS2025.name,
+    layout: CGS25Layout,
+    data: CGS2025 as EventModel,
+  },
 } satisfies Record<string, {
   id: number
-  name:string
-  layout: React.ComponentType<{ data: any} > | null
-  data:any
-}>
-
+  name: string
+  layout: React.ComponentType<{ data: EventModel }>
+  data: EventModel
+}>;
