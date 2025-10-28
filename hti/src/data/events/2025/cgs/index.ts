@@ -7,4 +7,6 @@ import { MegaManStarBurst } from "./MegaManStarburst";
 import { FreedomPlanetPlus } from "./FreedomPlanetPlus";
 import { StarFoxGameWatch } from "./StarFoxGameWatch";
 import { AlexKidd } from "./AlexKidd";
+import { ProjectForestation } from "./ProjectForestation";
+import { WariosConquest } from "./WariosConquest";
 

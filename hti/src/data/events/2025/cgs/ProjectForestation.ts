@@ -4,21 +4,21 @@ import { sortByNumericSuffix } from "../../../../lib/asset-helpers";
 
 // Auto-import: hero, icon, logo, screenshots, trailers
 
-const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/hero1.*", { eager: true, as: "url" });
+const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/ProjectForestation/hero1.*", { eager: true, as: "url" });
 const hero = Object.values(heroGlob);
-const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/icon.*", { eager: true, as: "url" });
+const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/ProjectForestation/icon.*", { eager: true, as: "url" });
 const icon = Object.values(iconGlob);
-const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/logo.*", { eager: true, as: "url" });
+const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/ProjectForestation/logo.*", { eager: true, as: "url" });
 const logo = Object.values(logoGlob);
 
 const screenshotsGlob = import.meta.glob<string>(
-  "../../../../assets/events/2025/cgs/MegamanStarburst/ss*.*",
+  "../../../../assets/events/2025/cgs/ProjectForestation/ss*.*",
   { eager: true, as: "url" }
 );
 const screenshots = sortByNumericSuffix(Object.values(screenshotsGlob));
 
 const trailersGlob = import.meta.glob<string>(
-  "../../../../assets/events/2025/cgs/MegamanStarburst/trailer*.*",
+  "../../../../assets/events/2025/cgs/ProjectForestation/trailer*.*",
   { eager: true, as: "url" }
 );
 const trailers = Object.values(trailersGlob);
@@ -32,15 +32,17 @@ const thumbnail =
   "";
 
 
-const brief: string = `A new adventure starring the Blue Bomber!`;
+const brief: string = `Welcome to the nostalgic adventure of the famous blue hedgehog!`;
 const description: string[] = [
-  "A new adventure starring Mega Man! Slated for a 2026 release!",
+  "Welcome to the nostalgic adventure of the famous blue hedgehog! As part of the Chao Games Showcase 2025 event, we would like to present to you our new demo version of our game which is inspired by the games of the early 2000s (Sonic Adventure 1-2, Sonic Heroes).",
+  "",
+  "Our game is being developed as a fan-inspired project based on the 3rd season of the anime \"Sonic X\". In this demo, you will be able to experience one of the levels we are currently working on. We are open to criticism since we are newcomers to game development and wish to provide players with the best possible experience given our current abilities. Therefore, please do not hesitate to report any issues you encounter during your gameplay. Any bug reports will be as good as gold to us. Enjoy the game and have a great time at CGS!"
 ];
 const urls: GameUrls = {
   booth: null,
   steam: null,
   steamwishlist: null,
-  gamejolt: null,
+  gamejolt: 'https://gamejolt.com/games/forestation/918619',
   itchio: null,
   gamebanana: null,
   website: null,
@@ -54,23 +56,23 @@ const urls: GameUrls = {
 };
 const tags: string[] = [
   "fangame",
-  "arcade",
-  "retro",
-  "2d",
-  "nintendo",
-  "starfox",
-  "remake",
-  "gamewatch",
-  "preservation",
+  "platformer",
+  "3d",
+  "sonic",
+  "adventure",
+  "heroes",
   "action",
+  "demo",
+  "sonicx",
+  "early2000s",
 ];
 // EXPORT TIME !!! (<- sonic megamix reference :D)
 
-export const MegaManStarBurst = new Game(
-  "megamanstarburst",                    // slug
-  "Mega Man: Starburst",       // title
+export const ProjectForestation = new Game(
+  "projectforestation",                    // slug
+  "Project Forestation",       // title
   brief,                        // brief
-  {'Developer':'Flapperultra'},    // authors
+  {'Team':'Rigel Team'},    // authors
   description,                  // description
   thumbnail,                    // thumbnail
   trailers,                     // trailers
@@ -82,6 +84,6 @@ export const MegaManStarBurst = new Game(
   "CGS Preview",                  // version
   urls,                           // URLS
   false,                          // Is it featured?
-  false,                          // Is there a Booth in the forums?
-  false,                          // Is it playable?
+  true,                          // Is there a Booth in the forums?
+  true,                          // Is it playable?
 )
