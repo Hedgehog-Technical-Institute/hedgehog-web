@@ -4,7 +4,7 @@ import { sortByNumericSuffix } from "../../../../lib/asset-helpers";
 
 // Auto-import: hero, icon, logo, screenshots, trailers
 
-const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/hero1.*", { eager: true, query: "?url", import: "default" });
+const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/hero*.*", { eager: true, query: "?url", import: "default" });
 const hero = Object.values(heroGlob);
 const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/icon.*", { eager: true, query: "?url", import: "default" });
 const icon = Object.values(iconGlob);

@@ -4,22 +4,22 @@ import { sortByNumericSuffix } from "../../../../lib/asset-helpers";
 
 // Auto-import: hero, icon, logo, screenshots, trailers
 
-const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/hero*.*", { eager: true, as: "url" });
+const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/hero*.*", { eager: true, query: "?url", import: "default" });
 const hero = Object.values(heroGlob);
-const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/icon.*", { eager: true, as: "url" });
+const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/icon.*", { eager: true, query: "?url", import: "default" });
 const icon = Object.values(iconGlob);
-const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/logo.*", { eager: true, as: "url" });
+const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/logo.*", { eager: true, query: "?url", import: "default" });
 const logo = Object.values(logoGlob);
 
 const screenshotsGlob = import.meta.glob<string>(
   "../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/ss*.*",
-  { eager: true, as: "url" }
+  { eager: true, query: "?url", import: "default" }
 );
 const screenshots = sortByNumericSuffix(Object.values(screenshotsGlob));
 
 const trailersGlob = import.meta.glob<string>(
   "../../../../assets/events/2025/cgs/SuperMarioBuysBreadLmao/trailer*.*",
-  { eager: true, as: "url" }
+  { eager: true, query: "?url", import: "default" }
 );
 const trailers = Object.values(trailersGlob);
 
