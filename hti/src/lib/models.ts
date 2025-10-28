@@ -32,6 +32,7 @@ export class Game {
   thumbnail: string;
   trailers: string[];      // mp4 or YouTube links
   screenshots: string[];   // resolved URLs to images/gifs
+  hero: string[];   
   logo: string[];
   icon: string[];
   platforms: string[];
@@ -51,6 +52,7 @@ export class Game {
     thumbnail: string,
     trailers: string[],
     screenshots: string[],
+    hero: string[],
     logo: string[],
     icon: string[],
     platforms: string[],
@@ -70,6 +72,7 @@ export class Game {
     this.thumbnail = thumbnail;
     this.trailers = trailers;
     this.screenshots = screenshots;
+    this.hero = hero;
     this.logo = logo;
     this.icon = icon;
     this.platforms = platforms;

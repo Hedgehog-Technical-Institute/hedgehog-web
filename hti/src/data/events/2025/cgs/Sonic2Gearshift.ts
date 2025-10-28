@@ -79,8 +79,9 @@ export const Sonic2Gearshift = new Game(
   thumbnail,                    // thumbnail
   trailers,                     // trailers
   screenshots,                  // screenshots
-  logo,                         // screenshots
-  icon,                         // screenshots
+  hero,                         // hero
+  logo,                         // logo
+  icon,                         // icon
   ["Windows"],                  // platforms
   tags,                         // tags
   "2.0.0",                      // version

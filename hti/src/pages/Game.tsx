@@ -63,6 +63,15 @@ export default function Game() {
         </section>
       )}
 
+      {Array.isArray(game.hero) && game.hero.length > 0 && (
+        <section>
+          <h2>Hero (all)</h2>
+          {game.hero.map((u: string, i: number) => (
+            <img key={i} src={u} alt={`icon-${i}`} style={{ maxWidth: 160, display: "block", marginBottom: 8 }} />
+          ))}
+        </section>
+      )}
+
       {game.trailers?.length ? (
         <section>
           <h2>Trailers</h2>

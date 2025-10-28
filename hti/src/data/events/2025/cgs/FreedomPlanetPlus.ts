@@ -72,6 +72,7 @@ export const FreedomPlanetPlus = new Game(
   thumbnail,                    // thumbnail
   trailers,                     // trailers
   screenshots,                  // screenshots
+  hero,                         // hero
   logo,                         // screenshots
   icon,                         // screenshots
   ["Windows"],                  // platforms

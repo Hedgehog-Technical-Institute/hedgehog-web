@@ -4,22 +4,22 @@ import { sortByNumericSuffix } from "../../../../lib/asset-helpers";
 
 // Auto-import: hero, icon, logo, screenshots, trailers
 
-const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/hero1.*", { eager: true, as: "url" });
+const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/hero1.*", { eager: true, query: "?url", import: "default" });
 const hero = Object.values(heroGlob);
-const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/icon.*", { eager: true, as: "url" });
+const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/icon.*", { eager: true, query: "?url", import: "default" });
 const icon = Object.values(iconGlob);
-const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/logo.*", { eager: true, as: "url" });
+const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/cgs/MegamanStarburst/logo.*", { eager: true, query: "?url", import: "default" });
 const logo = Object.values(logoGlob);
 
 const screenshotsGlob = import.meta.glob<string>(
   "../../../../assets/events/2025/cgs/MegamanStarburst/ss*.*",
-  { eager: true, as: "url" }
+  { eager: true, query: "?url", import: "default" }
 );
 const screenshots = sortByNumericSuffix(Object.values(screenshotsGlob));
 
 const trailersGlob = import.meta.glob<string>(
   "../../../../assets/events/2025/cgs/MegamanStarburst/trailer*.*",
-  { eager: true, as: "url" }
+  { eager: true, query: "?url", import: "default" }
 );
 const trailers = Object.values(trailersGlob);
 
@@ -57,12 +57,10 @@ const tags: string[] = [
   "arcade",
   "retro",
   "2d",
-  "nintendo",
-  "starfox",
+  "capcom",
+  "megaman",
   "remake",
-  "gamewatch",
-  "preservation",
-  "action",
+  "platformer",
 ];
 // EXPORT TIME !!! (<- sonic megamix reference :D)
 
@@ -75,6 +73,7 @@ export const MegaManStarBurst = new Game(
   thumbnail,                    // thumbnail
   trailers,                     // trailers
   screenshots,                  // screenshots
+  hero,                         // hero
   logo,                         // screenshots
   icon,                         // screenshots
   ["Windows"],         // platforms

@@ -86,6 +86,7 @@ export const SonicErazor = new Game(
   thumbnail,                    // thumbnail
   trailers,                     // trailers
   screenshots,                  // screenshots
+  hero,                         // hero
   logo,                         // screenshots
   icon,                         // screenshots
   ["Windows, Sega Genesis"],    // platforms

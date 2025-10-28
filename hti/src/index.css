@@ -1,6 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
 @import "tailwindcss";
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 /* FONTS */
 @font-face {
   font-family: "Space-Grotesk";
