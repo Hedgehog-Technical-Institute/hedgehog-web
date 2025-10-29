@@ -42,7 +42,7 @@ const Navbar = () => {
 
           {/* Menu - Desktop */}
           <ul className="hidden sm:flex space-x-6 font-bold text-2xl font-hti font">
-            {/* <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li> */}
+            <li className="transition-transform duration-200 hover:scale-105 font-spacegrotesk"><Link to="/events">EVENTS</Link></li>
             {/* <li className="transition-transform duration-200 hover:scale-105"><Link to="/community">COMMUNITY</Link></li> */}
             {/* https://discord.gg/PctwSxXDkx */}
             <li className="transition-transform duration-200 hover:scale-105"><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer">DISCORD</a></li>
@@ -55,11 +55,11 @@ const Navbar = () => {
       {menuOpen && (
         <nav className="sm:hidden px-5 pt-2 pb-4 bg-ylw">
           <ul className="flex flex-col space-y-3 font-bold text-lg">
-            {/* <li><Link to="/events" onClick={() => setMenuOpen(false)}>EVENTS</Link></li> */}
+            <li><Link to="/events" onClick={() => setMenuOpen(false)}>EVENTS</Link></li>
             {/* <li><Link to="/Community" onClick={() => setMenuOpen(false)}>COMMUNITY</Link></li> */}
             <li><a href="https://discord.gg/PctwSxXDkx" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>DISCORD</a></li>
             <li><a href="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</a></li>
-            {/* <li><Link to="https://www.hedgehogtechnicalinstitute.com/forum/" onClick={() => setMenuOpen(false)}>FORUMS</Link></li> */}
+
           </ul>
         </nav>
       )}
