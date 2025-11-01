@@ -42,6 +42,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Happiness";
+  src: url("./assets/fonts/FOTPOPHAPPINESSSTRPEXTRABOLD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 @theme {
   --font-spacegrotesk: "Space-Grotesk", sans-serif;
@@ -49,6 +58,7 @@
   --font-arc: "V-Dub", sans-serif;
   --font-current: "Advantage", sans-serif;
   --font-kimberly: "Kimberly", sans-serif;
+  --font-happiness: "Happiness", sans-serif;
 
   --color-light: #fdfdfd;
   --color-charcoal: #171b24;
