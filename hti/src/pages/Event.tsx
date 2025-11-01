@@ -4,7 +4,7 @@ import PageNotFound from "./404"
 
 export default function Event() {
   const { eventId } = useParams();
-  const event = eventDataMap[eventId || ""];
+  const event = eventDataMap[eventId as keyof typeof eventDataMap]; // cast eventId to the map's key union
 
   if (!event) return (<PageNotFound/>);
 

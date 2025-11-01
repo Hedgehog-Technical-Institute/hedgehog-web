@@ -9,7 +9,7 @@ function isYouTube(url: string) {
 
 export default function Game() {
   const { eventId, gameId } = useParams();
-  const event = eventDataMap[eventId || ""];
+  const event = eventDataMap[eventId as keyof typeof eventDataMap]; // cast eventId to the map's key union
   const game = event?.data?.games?.find((g: any) => g.slug === gameId);
 
   if (!event || !game) return <PageNotFound />;
