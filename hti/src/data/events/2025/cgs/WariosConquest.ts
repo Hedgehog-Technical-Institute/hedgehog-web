@@ -39,7 +39,7 @@ const description: string[] = [
   "Never played Super Mario Land 2? No problem-an enhanced remake is included! Try the demo and share your feedback-let’s shape the ultimate Wario celebration together!"
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=192&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: 'https://gamejolt.com/games/SML2WCremake/895658',

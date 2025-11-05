@@ -39,7 +39,7 @@ const description: string[] = [
   `In this episode, Tails following clues from a storybook, sets out to find one of the seven ancient wonders of Mobius, hidden somewhere in Boulder Bay.`
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=184&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,
@@ -69,7 +69,7 @@ const tags: string[] = [
 // EXPORT TIME !!! (<- sonic megamix reference :D)
 
 export const SATAMCh5 = new Game(
-  "satamhapter5",            // slug
+  "satamchapter5",            // slug
   "Sonic the Hedgehog RPG: Past, Present, & Future",        // title
   brief,                        // brief
   {'Team':'Sonic SatAM RPG Team'},    // authors

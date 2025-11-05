@@ -37,7 +37,7 @@ const description: string[] = [
   "StarFox - Game&Watch aims to preserve and update the original LCD title released by Nelsonic Software and Nintendo from 1993! This version not only comes with the benefit of being able to be played on modern hardware but is also packed with many quality of life improvements; from achievements to a new balanced mode, you’re sure to sink many hours in this polished gem from the past!",
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=198&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,

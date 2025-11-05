@@ -41,7 +41,7 @@ const description: string[] = [
   `A GameJolt account is required to submit scores and unlock trophies.`,
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=200&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: 'https://gamejolt.com/games/sonic_j/261887',
@@ -83,7 +83,7 @@ export const SonicJ = new Game(
   hero,                         // hero
   logo,                         // screenshots
   icon,                         // screenshots
-  ["Windows"],                  // platforms
+  ["Windows, Android"],                  // platforms
   tags,                         // tags
   "CGS Build",                  // version
   urls,                         // URLS
