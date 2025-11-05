@@ -89,5 +89,5 @@ export const SonicJ = new Game(
   urls,                         // URLS
   false,                        // Is it featured?
   true,                         // Is there a Booth in the forums?
-  false,                         // Is it playable?
+  true,                         // Is it playable?
 )

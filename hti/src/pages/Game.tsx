@@ -74,7 +74,7 @@ export default function Game() {
               <p className="text-2xl font-black text-center">
                 {Object.entries(game.authors)
                   .map(([role, name]) =>
-                    role.toLowerCase() === "team" ? `By:o ${name}` : `${role}: ${name}`
+                    role.toLowerCase() === "team" ? `By: ${name}` : `${role}: ${name}`
                   )
                   .join(" • ")}
               </p>

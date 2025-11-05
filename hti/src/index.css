@@ -70,6 +70,11 @@
   --color-arc: #5005ba;
   --color-jam: #e80f6b;
   --color-cgs: #18d7b4;
+  --color-cgs-purple:#4B2451;
+  --color-cgs-pink:#F888D3;
+  --color-cgs-orange:#FF7C00;
+  --color-cgs-ylw:#FEFD02;
+  --color-cgs-lylw:#FFFF9B;
 }
 
 :root {

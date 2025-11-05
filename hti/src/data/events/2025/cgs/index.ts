@@ -16,15 +16,16 @@ import { SonicJ } from "./SonicJ";
 export const CGS2025 = new Event(
   "cgs2025",
   "Chao Games Showcase 2025",
-  "TAGLINE GOES HERE",
+  "2025's showcase is here!",
   2025,
   [
-    "DESCRIPTION GOES HERE"
+    "Welcome! This event is dedicated to fan games and their developers and features a fantastic collection of games for you to download and play right now!",
+    // "Check back throughout the event 8th - 15th for updates and streams."
   ],
   [
-    "MEDIAURL"    
+    "/assets/cgs/CGS_LOGO.png"    
   ],
-  "DIRECTURL",
+  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   [
     "TREEHOUSELIVESTREAMURL"
   ],
