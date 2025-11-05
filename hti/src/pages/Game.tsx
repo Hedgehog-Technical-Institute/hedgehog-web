@@ -1,126 +1,150 @@
 // src/pages/Game.tsx
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { eventDataMap } from "../data/event-data";
 import PageNotFound from "./404";
+import MediaCarousel, { type MediaItem } from "../components/MediaCarousel";
+import type { GameUrls } from "../lib/models";
 
-function isYouTube(url: string) {
-  return /youtube\.com|youtu\.be/.test(url);
+function labelFor(key: string) {
+  switch (key) {
+    case "booth": return "Visit the Booth";
+    case "download": return "Download";
+    case "itchio": return "itch.io";
+    case "gamejolt": return "Game Jolt";
+    case "steam": return "Steam";
+    case "steamwishlist": return "Wishlist";
+    case "roblox": return "Roblox";
+    case "website": return "Website";
+    case "youtube": return "YouTube";
+    case "discord": return "Discord";
+    case "twitter": return "Twitter";
+    case "bluesky": return "Bluesky";
+    case "portfolio": return "Portfolio";
+    case "gamebanana": return "GameBanana";
+    default: return key;
+  }
 }
 
 export default function Game() {
   const { eventId, gameId } = useParams();
-  const event = eventDataMap[eventId as keyof typeof eventDataMap]; // cast eventId to the map's key union
-  const game = event?.data?.games?.find((g: any) => g.slug === gameId);
+  const entry = eventDataMap[eventId as keyof typeof eventDataMap];
+  const game = entry?.data?.games?.find((g) => g.slug === gameId);
+  if (!entry || !game) return <PageNotFound />;
 
-  if (!event || !game) return <PageNotFound />;
+  const media: MediaItem[] = [
+    ...(game.trailers ?? []).map((t) => ({ type: "video", url: t }) as const),
+    ...(game.screenshots ?? []).map((s) => ({ type: "image", url: s }) as const),
+  ];
+
+  const primaryLogo = Array.isArray(game.logo) && game.logo.length ? game.logo[0] : undefined;
+  // const primaryIcon = Array.isArray(game.icon) && game.icon.length ? game.icon[0] : undefined;
+
+  const preferredOrder = [
+    "booth","download","itchio","gamejolt","steam","steamwishlist","roblox","website",
+    ,"youtube","discord","twitter","bluesky","portfolio","gamebanana",
+  ] as const;
+
+  const links = preferredOrder
+    .map((k) => ({ key: k as keyof GameUrls, url: game.urls?.[k as keyof GameUrls] ?? undefined }))
+    .filter(({ url }) => !!url) as { key: string; url: string }[];
 
   return (
-    <div style={{ padding: 16 }}>
-      <h1>{game.title}</h1>
-      <p><strong>Slug:</strong> {game.slug}</p>
-      <p><strong>ID:</strong> {game.id}</p>
-      <p><strong>Brief:</strong> {game.brief}</p>
-      <p><strong>Version:</strong> {game.version}</p>
-      <p><strong>Platforms:</strong> {game.platforms?.join(", ")}</p>
-      <p><strong>Tags:</strong> {game.tags?.join(", ")}</p>
-      <p><strong>Featured:</strong> {String(game.isFeatured)}</p>
-      <p><strong>Booth Available:</strong> {String(game.isBoothAvailable)}</p>
-      <p><strong>Playable:</strong> {String(game.isPlayable)}</p>
+    <section className="min-h-screen bg-light text-charcoal px-4 py-10">
+      <div className="max-w-6xl mx-auto">
+        <p className="mb-4">
+          <Link to={`/events/${eventId}`} className="text-charcoal/80 hover:text-ylw transition underline underline-offset-4">
+            ← Back to {entry.data.name}
+          </Link>
+        </p>
 
-      {game.authors && (
-        <section>
-          <h2>Authors</h2>
-          <ul>
-            {Object.entries(game.authors).map(([role, name]: [string, string]) => (
-              <li key={role}><strong>{role}:</strong> {name}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {game.thumbnail && (
-        <section>
-          <h2>Thumbnail</h2>
-          <img src={game.thumbnail} alt={`${game.title} thumbnail`} style={{ maxWidth: 480 }} />
-        </section>
-      )}
-
-      {Array.isArray(game.logo) && game.logo.length > 0 && (
-        <section>
-          <h2>Logo (all)</h2>
-          {game.logo.map((u: string, i: number) => (
-            <img key={i} src={u} alt={`logo-${i}`} style={{ maxWidth: 320, display: "block", marginBottom: 8 }} />
-          ))}
-        </section>
-      )}
-
-      {Array.isArray(game.icon) && game.icon.length > 0 && (
-        <section>
-          <h2>Icon (all)</h2>
-          {game.icon.map((u: string, i: number) => (
-            <img key={i} src={u} alt={`icon-${i}`} style={{ maxWidth: 160, display: "block", marginBottom: 8 }} />
-          ))}
-        </section>
-      )}
-
-      {Array.isArray(game.hero) && game.hero.length > 0 && (
-        <section>
-          <h2>Hero (all)</h2>
-          {game.hero.map((u: string, i: number) => (
-            <img key={i} src={u} alt={`icon-${i}`} style={{ maxWidth: 160, display: "block", marginBottom: 8 }} />
-          ))}
-        </section>
-      )}
-
-      {game.trailers?.length ? (
-        <section>
-          <h2>Trailers</h2>
-          {game.trailers.map((t: string, i: number) =>
-            isYouTube(t) ? (
-              <div key={i} style={{ aspectRatio: "16/9", maxWidth: 720 }}>
-                <iframe
-                  src={t.replace("watch?v=", "embed/")}
-                  title={`trailer-${i}`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  style={{ width: "100%", height: "100%", border: 0 }}
-                />
-              </div>
+        <div className="flex flex-col md:flex-row gap-10 items-stretch">
+          {/* RIGHT (first on mobile) */}
+          <aside className="order-1 lg:order-2 space-y-4 md:w-1/2">
+            {primaryLogo ? (
+              <img
+                src={primaryLogo}
+                alt={`${game.title} logo`}
+                className="w-full p-4 object-contain"
+              />
             ) : (
-              <video key={i} src={t} controls style={{ maxWidth: 720, display: "block", marginBottom: 8 }} />
-            )
-          )}
-        </section>
-      ) : null}
+              <h1 className="text-4xl font-bold font-spacegrotesk text-center lg:text-right">{game.title}</h1>
+            )}
 
-      {game.screenshots?.length ? (
-        <section>
-          <h2>Screenshots</h2>
-          <div style={{ display: "grid", gap: 8, gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))" }}>
-            {game.screenshots.map((s: string, i: number) => (
-              <img key={i} src={s} alt={`screenshot-${i}`} style={{ width: "100%" }} />
-            ))}
+            {game.authors && (
+              <p className="text-2xl font-black text-center">
+                {Object.entries(game.authors)
+                  .map(([role, name]) =>
+                    role.toLowerCase() === "team" ? `By:o ${name}` : `${role}: ${name}`
+                  )
+                  .join(" • ")}
+              </p>
+            )}
+
+            {game.brief && (
+              <p className="text-base lg:text-lg opacity-90 text-center ">{game.brief}</p>
+            )}
+
+            {links.length ? (
+              <div className="flex flex-col gap-2 items-center ">
+                {links.map(({ key, url }) => (
+                  <a
+                    key={key}
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block text-xl text-center font-semibold px-6 py-3 bg-ylw text-charcoal rounded-full custom-shadow-2 hover:bg-cgs hover:text-charcoal transition my-3 mx-3"
+                  >
+                    {labelFor(key)}
+                  </a>
+                ))}
+              </div>
+            ) : null}
+
+            <div className="rounded-2xl p-4 bg-charcoal text-light">
+              <h3 className="text-xl font-bold font-spacegrotesk mb-2">Details</h3>
+              <dl className="space-y-1 text-sm">
+                <Row label="Version" value={game.version || "—"} />
+                <Row label="Platforms" value={game.platforms?.join(", ") || "—"} />
+                {/* <Row label="Featured" value={game.isFeatured ? "Yes" : "No"} /> */}
+                <Row label="Booth" value={game.isBoothAvailable ? "Yes" : "No"} />
+                <Row label="Playable" value={game.isPlayable ? "Yes" : "No"} />
+              </dl>
+              {game.tags?.length ? (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {game.tags.map((t) => (
+                    <span key={t} className="px-3 py-1 rounded-full bg-white/10 text-xs font-medium">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          </aside>
+
+          {/* LEFT (second on mobile): media → description */}
+          <div className="order-2 lg:order-1 md:w-1/2">
+            <MediaCarousel media={media} />
+
+            {game.description?.length ? (
+              <section className="mt-8">
+                <h2 className="text-2xl font-bold font-spacegrotesk mb-3">About</h2>
+                <div className="space-y-3 leading-relaxed">
+                  {game.description.map((p, i) => <p key={i}>{p}</p>)}
+                </div>
+              </section>
+            ) : null}
           </div>
-        </section>
-      ) : null}
+        </div>
+      </div>
+    </section>
+  );
+}
 
-      {game.description?.length ? (
-        <section>
-          <h2>Description</h2>
-          {game.description.map((p: string, i: number) => <p key={i}>{p}</p>)}
-        </section>
-      ) : null}
-
-      {game.urls && Object.values(game.urls).some(Boolean) ? (
-        <section>
-          <h2>Links</h2>
-          <ul>
-            {Object.entries(game.urls).map(([k, v]) => v ? (
-              <li key={k}><a href={v as string} target="_blank" rel="noreferrer">{k}</a></li>
-            ) : null)}
-          </ul>
-        </section>
-      ) : null}
+function Row({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex justify-between gap-3">
+      <dt className="opacity-70">{label}</dt>
+      <dd className="text-right">{value}</dd>
     </div>
   );
 }
