@@ -39,7 +39,7 @@ const description: string[] = [
   "Our game is being developed as a fan-inspired project based on the 3rd season of the anime \"Sonic X\". In this demo, you will be able to experience one of the levels we are currently working on. We are open to criticism since we are newcomers to game development and wish to provide players with the best possible experience given our current abilities. Therefore, please do not hesitate to report any issues you encounter during your gameplay. Any bug reports will be as good as gold to us. Enjoy the game and have a great time at CGS!"
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=187&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: 'https://gamejolt.com/games/forestation/918619',

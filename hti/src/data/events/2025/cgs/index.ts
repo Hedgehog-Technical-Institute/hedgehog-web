@@ -5,26 +5,27 @@ import { Sonic2Gearshift } from "./Sonic2Gearshift";
 import { SonicErazor } from "./SonicErazor";
 import { SuperMarioBuysBread } from "./SuperMarioBuysBreadLmao";
 import { SATAMCh5 } from "./SATAMCh5";
-import { SonicJ } from "./SonicJ";
 import { MegaManStarBurst } from "./MegaManStarburst";
 import { FreedomPlanetPlus } from "./FreedomPlanetPlus";
 import { StarFoxGameWatch } from "./StarFoxGameWatch";
 import { AlexKidd } from "./AlexKidd";
 import { ProjectForestation } from "./ProjectForestation";
 import { WariosConquest } from "./WariosConquest";
+import { SonicJ } from "./SonicJ";
 
 export const CGS2025 = new Event(
   "cgs2025",
   "Chao Games Showcase 2025",
-  "TAGLINE GOES HERE",
+  "2025's showcase is here!",
   2025,
   [
-    "DESCRIPTION GOES HERE"
+    "Welcome! This event is dedicated to fan games and their developers and features a fantastic collection of games for you to download and play right now!",
+    // "Check back throughout the event 8th - 15th for updates and streams."
   ],
   [
-    "MEDIAURL"    
+    "/assets/cgs/CGS_LOGO.png"    
   ],
-  "DIRECTURL",
+  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   [
     "TREEHOUSELIVESTREAMURL"
   ],
@@ -33,12 +34,12 @@ export const CGS2025 = new Event(
     SonicErazor,
     SuperMarioBuysBread,
     SATAMCh5,
-    SonicJ,
     MegaManStarBurst,
     FreedomPlanetPlus,
     StarFoxGameWatch,
     AlexKidd,
     ProjectForestation,
-    WariosConquest
+    WariosConquest,
+    SonicJ,
   ]
 )

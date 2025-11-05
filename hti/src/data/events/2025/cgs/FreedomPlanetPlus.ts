@@ -65,7 +65,7 @@ const tags: string[] = [
 
 export const FreedomPlanetPlus = new Game(
   "freedomeplanetplus",                     // slug
-  "Sonic J: Online Physics Demo",        // title
+  "Freedom Planet Plus",        // title
   brief,                        // brief
   {'Team':'Chemical Moon Games'},         // authors
   description,                  // description

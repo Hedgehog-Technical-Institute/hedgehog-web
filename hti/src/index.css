@@ -42,6 +42,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Happiness";
+  src: url("./assets/fonts/FOTPOPHAPPINESSSTRPEXTRABOLD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 @theme {
   --font-spacegrotesk: "Space-Grotesk", sans-serif;
@@ -49,6 +58,7 @@
   --font-arc: "V-Dub", sans-serif;
   --font-current: "Advantage", sans-serif;
   --font-kimberly: "Kimberly", sans-serif;
+  --font-happiness: "Happiness", sans-serif;
 
   --color-light: #fdfdfd;
   --color-charcoal: #171b24;
@@ -60,6 +70,11 @@
   --color-arc: #5005ba;
   --color-jam: #e80f6b;
   --color-cgs: #18d7b4;
+  --color-cgs-purple:#4B2451;
+  --color-cgs-pink:#F888D3;
+  --color-cgs-orange:#FF7C00;
+  --color-cgs-ylw:#FEFD02;
+  --color-cgs-lylw:#FFFF9B;
 }
 
 :root {

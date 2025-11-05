@@ -39,7 +39,7 @@ const description: string[] = [
   `"Years ago, our heroes Alex and Stella set out to find the Miracle Gems and return the stars to the Aries sky. But when the evil Janken the Great, freed from petrification, discovers the power of the stars contained within the Miracle Gems, he seeks revenge and returns, far more powerful than before, to take the kingdom of Radaxian by force. It's up to Alex Kidd, Stella, and Prince Egle to save Radaxian and return the stars to the Aries sky once again."`
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=196&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,

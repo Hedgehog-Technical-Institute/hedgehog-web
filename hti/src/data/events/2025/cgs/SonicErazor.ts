@@ -47,7 +47,7 @@ const description: string[] = [
   "• And Also: A save select with three slots, a ton of options to customize your experience to your liking, a custom sound test, and so much more!"
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=182&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,

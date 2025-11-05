@@ -37,7 +37,7 @@ const description: string[] = [
   `After Mario defeated Bowser for the 1234567890th time, he decides to eat bruschetta to relax, but unfortunately, all of the world's supply of bread has been stolen by terrorists to fuel a super computer, Metal Gear McQueen! this makes mario ANGERY and goes on a rampage for that BREAD!`,
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=193&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,

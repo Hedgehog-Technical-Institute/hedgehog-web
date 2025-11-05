@@ -45,7 +45,7 @@ const description: string[] = [
   `After reading the note, Sonic sets out to thwart Dr. Robotnik's scheme and save his friend!`
 ];
 const urls: GameUrls = {
-  booth: null,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=199&sid=5f8ee328149e8550e942b1dae1303948`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,
