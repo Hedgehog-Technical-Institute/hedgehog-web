@@ -4,33 +4,51 @@ import { Link } from "react-router-dom";
 
 export default function Events() {
   // only have CGS 2025 right now
-  const eventId = "cgs2025";
+  const eventId1 = "cgs2025";
+  const eventId2 = "arcindie2025";
   // const event = eventDataMap[eventId];
 
   return (
-    <section className="relative h-[calc(100vh-7rem)] bg-cgs text-light flex items-center justify-center px-4 py-16">
+    <section className="">
       
       {/* Video should sit in the background
       <div className="absolute inset-0 z-0">
         <HeroVideo />
       </div> */}
 
-      <div className="max-w-3xl w-full text-center">
+      <div className="min-w-100% text-center">
+        {/* CGS */}
+        <div className="bg-arc text-light flex items-center flex-col justify-center px-4 py-16"> 
+          <Link
+            to={`/events/${eventId2}`}
+          >
+            <img src="/assets/arcindie/arcindie_logo.png" alt="ArcIndie logo" className="w-150 h-auto"/>
+          </Link>
 
-        <Link
-          to={`/events/${eventId}`}
-        >
-          <img src="/assets/cgs/CGS_LOGO.png" alt="Chao Games Showcase logo" className="mb-6"/>
-        </Link>
+          <h2 className="text-5xl font-current my-6">arcIndie 2025 is here!</h2>
+          <Link
+            to={`/events/${eventId2}`}
+            className="inline-block text-xl font-semibold px-6 py-3 bg-charcoal rounded-full custom-shadow hover:bg-light hover:text-charcoal transition duration-300"
+          >
+            Check out 2025's Indie Showcase!
+          </Link>
+        </div>       
+        {/* CGS */}
+        <div className="bg-cgs text-light flex items-center flex-col justify-center px-4 py-16"> 
+          <Link
+            to={`/events/${eventId1}`}
+          >
+            <img src="/assets/cgs/CGS_LOGO.png" alt="Chao Games Showcase logo" className="w-150 h-auto"/>
+          </Link>
 
-        <h1 className="text-5xl font-bold font-happiness mb-6">CGS 2025 is here!</h1>
-        <Link
-          to={`/events/${eventId}`}
-          className="inline-block text-xl font-semibold px-6 py-3 bg-charcoal rounded-full custom-shadow hover:bg-light hover:text-charcoal transition duration-300"
-        >
-          Check out 2025's showcase Now!
-        </Link>
-
+          <h2 className="text-5xl font-bold font-happiness my-6">CGS 2025 is here!</h2>
+          <Link
+            to={`/events/${eventId1}`}
+            className="inline-block text-xl font-semibold px-6 py-3 bg-charcoal rounded-full custom-shadow hover:bg-light hover:text-charcoal transition duration-300"
+          >
+            Check out 2025's Fangame Showcase!
+          </Link>
+        </div>
       </div>
     </section>
   );
