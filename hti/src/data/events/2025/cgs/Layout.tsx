@@ -89,8 +89,8 @@ const CGS25Layout = ({ data }: { data: EventModel }) => {
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
         {/* Hero Section */}
         <header className="flex flex-col gap-4">
-            <div className="mx-30 text-center px-6 bg-cgs-pink border-6 rounded-xl border-light">
-          <div className="overflow-hidden mx-50 mt-5 mb-10 content-center text-center">
+            <div className="lg:mx-30 text-center px-6 bg-cgs-pink border-6 rounded-xl border-light">
+          <div className="overflow-hidden lg:mx-50 mt-5 mb-10 content-center text-center">
             <img
               src={data.media?.[0] ?? ""}
               alt="Stream Schedule"

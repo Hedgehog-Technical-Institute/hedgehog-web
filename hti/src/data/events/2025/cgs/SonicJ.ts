@@ -32,7 +32,7 @@ const thumbnail =
   "";
 
 
-const brief: string = `Sonic J is a Sonic fan game that aims to bring a new Classic Sonic Experience`;
+const brief: string = `Compete against other players in Sonic J's Online Physics Demo! Do you have what it takes to rise to the top?`;
 const description: string[] = [
   `This is the Online Physics Demo, an updated version of the game's "New Physics Demo" (2021) which introduces online features such as online sessions, time attack leaderboards, trophy hunting and more, all powered by the GameJolt API.`,
   ``,
@@ -75,7 +75,7 @@ export const SonicJ = new Game(
   "sonicj",                     // slug
   "Sonic J: Online Physics Demo",        // title
   brief,                        // brief
-  {'Developer':'jtnoob'},       // authors
+  {'Developer':'jtn00b'},       // authors
   description,                  // description
   thumbnail,                    // thumbnail
   trailers,                     // trailers

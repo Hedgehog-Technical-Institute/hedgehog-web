@@ -70,7 +70,7 @@ export const StarFoxGameWatch = new Game(
   "starfox",                    // slug
   "StarFox - Game&Watch",       // title
   brief,                        // brief
-  {'Developer':'Usagidood'},    // authors
+  {'By':'Usagidood & Jetter06'},    // authors
   description,                  // description
   thumbnail,                    // thumbnail
   trailers,                     // trailers

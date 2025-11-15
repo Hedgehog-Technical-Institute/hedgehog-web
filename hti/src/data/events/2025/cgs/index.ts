@@ -25,7 +25,7 @@ export const CGS2025 = new Event(
   [
     "/assets/cgs/CGS_LOGO.png"    
   ],
-  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "https://www.youtube.com/watch?v=gNOi_qecg_M",
   [
     "TREEHOUSELIVESTREAMURL"
   ],
