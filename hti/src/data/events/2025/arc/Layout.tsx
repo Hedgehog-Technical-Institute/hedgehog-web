@@ -179,7 +179,7 @@ const GameCard = ({ game, eventId }: { game: Game; eventId: string }) => (
     <div className="mt-auto pt-3 flex flex-wrap gap-2 justify-center flex-shrink-0">
       <Link
         to={`/events/${eventId}/${game.slug}`}
-        className="inline-block text-xl text-center font-semibold px-6 py-3 bg-arc text-light border-4 border-arc hover:border-charcoal hover:bg-cgs hover:text-charcoal transition my-3 mx-3 hover:scale-[1.08]"
+        className="inline-block text-xl text-center font-semibold px-6 py-3 bg-arc text-light rounded-b-2xl hover:bg-cgs hover:text-charcoal transition my-3 mx-3 hover:scale-[1.08]"
       >
         LEARN MORE
       </Link>
