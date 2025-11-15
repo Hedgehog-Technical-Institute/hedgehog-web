@@ -2,6 +2,7 @@
 // import { useState } from "react";
 import FeaturedShowcase from "../components/FeaturedSection";
 import HeroVideo from "../components/HeroVideo";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   // const [count, setCount] = useState(0);
@@ -26,7 +27,7 @@ const Home = () => {
               each year since 2021.
             </p>
 
-            {/* Announcement Buttons */}
+            {/* Event Announcement Buttons */}
             {/* <div className="mt-6 bg-light p-3 custom-shadow rounded-3xl">
               <p className="text-3xl font-bold text-charcoal mb-2">
                 Applications for arcINDIE & CGS 2025 are now open!
@@ -50,6 +51,27 @@ const Home = () => {
                 </a>
               </div>
             </div> */}
+
+            {/* Event Release Buttons */}
+            <div className="mt-6 bg-light p-3 custom-shadow rounded-3xl">
+              <p className="text-3xl font-bold text-charcoal mb-2">
+                arcINDIE 2025 & CGS 2025 are here!
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link
+                  to={`/events/cgs2025`}
+                  className="inline-block bg-cgs text-light text-md font-black font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw hover:text-charcoal transition duration-300"
+                >
+                  Check out Chao Games Showcase 2025!
+                </Link>
+               <Link
+                  to={`/events/arcindie2025`}
+                  className="inline-block bg-arc text-light text-md font-black font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw hover:text-charcoal transition duration-300"
+                >
+                  Check out arcINDIE 2025!
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
