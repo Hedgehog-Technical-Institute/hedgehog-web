@@ -163,7 +163,7 @@ const GameCard = ({ game, eventId }: { game: Game; eventId: string }) => (
         <img
           src={game.thumbnail}
           alt={`${game.title} thumbnail`}
-          className="w-full h-full object-scale-down "
+          className="min-w-full min-h-full object-scale-down "
         />
       </div>
     </Link>
