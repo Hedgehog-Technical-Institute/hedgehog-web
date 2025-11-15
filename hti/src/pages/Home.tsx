@@ -58,17 +58,17 @@ const Home = () => {
                 arcINDIE 2025 & CGS 2025 are here!
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Link
-                  to={`/events/cgs2025`}
-                  className="inline-block bg-cgs text-light text-md font-black font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw hover:text-charcoal transition duration-300"
-                >
-                  Check out Chao Games Showcase 2025!
-                </Link>
                <Link
                   to={`/events/arcindie2025`}
-                  className="inline-block bg-arc text-light text-md font-black font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw hover:text-charcoal transition duration-300"
+                  className="inline-block bg-arc text-light text-lg font-black font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw hover:text-charcoal transition duration-300"
                 >
                   Check out arcINDIE 2025!
+                </Link>
+                <Link
+                  to={`/events/cgs2025`}
+                  className="inline-block bg-cgs text-light text-lg font-black font-spacegrotesk px-6 py-3 rounded-full hover:bg-ylw hover:text-charcoal transition duration-300"
+                >
+                  Check out Chao Games Showcase 2025!
                 </Link>
               </div>
             </div>
