@@ -38,7 +38,7 @@ const description: string[] = [
   `⠀　⠀⠀⠀　⠀ 　⠀　 　⠀⠀　 　⠀⠀　⠀　⠀⠀‌ ⠀　　⠀⠀⠀ ⠀　⠀　 ⠀　 ⠀　　⠀ ⠀　⠀ 　⠀　　⠀⠀⠀ 　⠀⠀　⠀⠀ 　⠀　⠀　⠀　　⠀ ⠀　 　⠀⠀ ⠀　⠀　⠀　 ⠀　　 ⠀　⠀ 　⠀⠀　⠀⠀ 　⠀　　⠀‌ ⠀　⠀ ⠀　　 ⠀　⠀ 　⠀⠀　 　⠀　 ⠀⠀　⠀ 　⠀　　⠀⠀⠀ ⠀　　⠀ 　⠀　⠀　　⠀‌ 　⠀ ⠀　　 ⠀⠀　⠀ ⠀⠀　⠀ 　⠀　⠀⠀ 　 ⠀　⠀⠀ ⠀　⠀⠀　⠀ ⠀　⠀　‌ 　⠀⠀⠀ ⠀　　⠀ ⠀　⠀⠀ ⠀⠀　⠀ 　⠀ ⠀⠀⠀　⠀　⠀⠀ ⠀　⠀⠀ ⠀　⠀⠀ ⠀　　⠀ 　⠀⠀ ⠀　⠀⠀⠀‌`
 ];
 const urls: GameUrls = {
-  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=208&sid=ec392933d1dff13ce14a938f65819794`,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=201&sid=ec392933d1dff13ce14a938f65819794`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,

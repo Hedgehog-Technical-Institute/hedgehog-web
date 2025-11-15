@@ -17,7 +17,7 @@ import { RenegadeHero } from "./RenegadeHero";
 import { CubenenGardens } from "./CubenenGardens";
 import { CattoChateau } from "./CattoChateau";
 import { Ectorider } from "./Ectorider";
-import { StratoFreaks1Ultimate } from "./StratoFreaks1Ultimate";
+import { StratoFreaks1Ultimate } from "./SuperFreaks1Ultimate.ts";
 import { SuperFreaksSide } from "./SuperFreaksSide";
 
 export const ARCINDIE2025 = new Event(

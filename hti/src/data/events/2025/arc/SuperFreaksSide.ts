@@ -38,7 +38,7 @@ const description: string[] = [
   `The Super Freaks do have a lead; Kranion, Sticky's half-brother, is having a castle of his own constructed over the remains of one of Sticky's former bases--and yet, he's still just a mob guy who hasn't truly achieved power for himself, at least at the moment. Is he really behind this?`,
 ];
 const urls: GameUrls = {
-  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=207&sid=ec392933d1dff13ce14a938f65819794`,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=205&sid=ec392933d1dff13ce14a938f65819794`,
   steam: null,
   steamwishlist: null,
   gamejolt: null,

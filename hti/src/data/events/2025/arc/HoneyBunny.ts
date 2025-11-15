@@ -1,24 +1,24 @@
-// src/data/events/2025/cgs/RileyRoadrunner.ts
+// src/data/events/2025/cgs/HoneyBunny.ts
 import { Game, type GameUrls } from "../../../../lib/models";
 import { sortByNumericSuffix } from "../../../../lib/asset-helpers";
 
 // Auto-import: hero, icon, logo, screenshots, trailers
 
-const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/arcindie/RileyRoadrunner/hero*.*", { eager: true, query: "?url", import: "default" });
+const heroGlob = import.meta.glob<string>("../../../../assets/events/2025/arcindie/HoneyBunny/hero*.*", { eager: true, query: "?url", import: "default" });
 const hero = Object.values(heroGlob);
-const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/arcindie/RileyRoadrunner/icon.*", { eager: true, query: "?url", import: "default" });
+const iconGlob = import.meta.glob<string>("../../../../assets/events/2025/arcindie/HoneyBunny/icon.*", { eager: true, query: "?url", import: "default" });
 const icon = Object.values(iconGlob);
-const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/arcindie/RileyRoadrunner/logo.*", { eager: true, query: "?url", import: "default" });
+const logoGlob = import.meta.glob<string>("../../../../assets/events/2025/arcindie/HoneyBunny/logo.*", { eager: true, query: "?url", import: "default" });
 const logo = Object.values(logoGlob);
 
 const screenshotsGlob = import.meta.glob<string>(
-  "../../../../assets/events/2025/arcindie/RileyRoadrunner/ss*.*",
+  "../../../../assets/events/2025/arcindie/HoneyBunny/ss*.*",
   { eager: true, query: "?url", import: "default" }
 );
 const screenshots = sortByNumericSuffix(Object.values(screenshotsGlob));
 
 const trailersGlob = import.meta.glob<string>(
-  "../../../../assets/events/2025/arcindie/RileyRoadrunner/trailer*.*",
+  "../../../../assets/events/2025/arcindie/HoneyBunny/trailer*.*",
   { eager: true, query: "?url", import: "default" }
 );
 const trailers = Object.values(trailersGlob);
@@ -34,15 +34,10 @@ const thumbnail =
 
 const brief: string = `Honey Bunny is a low poly, late 90's inspired, 3d platformer. Help Honey Bunny stop the Cool Cats Gang from stealing the city's supply of cocktail cherries! Use her bunny ears to grab, throw and attack enemies!`;
 const description: string[] = [
-  `Riley the Roadrunner is a momentum based platform inspired by games old and new. But this is no "press right to win" game. Use Riley and Ollie's unique skills to find different paths that reveal faster routes. I'm still working on the overall production, but goals right now are:`,
-  ``,
-  `- Faster you go, the larger your currency multiplier!`,
-  `- Cosmetic shop where you can alter your character's colors.`,
-  `- Secret routes requiring speed and familiarity.`,
-  `- Bosses and Mini Bosses that aren't a pain in the butt!`,
+  `Honey Bunny is a low poly, late 90's inspired, 3d platformer. Help Honey Bunny stop the Cool Cats Gang from stealing the city's supply of cocktail cherries! Use her bunny ears to grab, throw and attack enemies!`,
 ];
 const urls: GameUrls = {
-  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=210&sid=ec392933d1dff13ce14a938f65819794`,
+  booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=206&sid=ec392933d1dff13ce14a938f65819794`,
   steam: null,
   steamwishlist: 'https://store.steampowered.com/app/2641550/Honey_Bunny/?beta=0',
   gamejolt: null,

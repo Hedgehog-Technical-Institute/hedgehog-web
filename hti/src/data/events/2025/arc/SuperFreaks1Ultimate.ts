@@ -61,8 +61,8 @@ const tags: string[] = [
 // EXPORT TIME !!! (<- sonic megamix reference :D)
 
 export const StratoFreaks1Ultimate = new Game(
-  "stratofreaks1ultimate",            // slug
-  "Strato Freaks 1 Ultimate Edition Turbo",        // title
+  "superfreaks1ultimate",            // slug
+  "Super Freaks 1 Ultimate Edition Turbo",        // title
   brief,                        // brief
   {'By':'Mr.Freaks'},    // authors
   description,                  // description
