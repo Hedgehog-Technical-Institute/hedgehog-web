@@ -12,7 +12,7 @@ function labelFor(key: string) {
     case "itchio": return "itch.io";
     case "gamejolt": return "Game Jolt";
     case "steam": return "Steam";
-    case "steamwishlist": return "Wishlist";
+    case "steamwishlist": return "Wishlist on Steam";
     case "roblox": return "Roblox";
     case "website": return "Website";
     case "youtube": return "YouTube";
@@ -67,7 +67,7 @@ export default function Game() {
                 className="w-full p-4 object-contain"
               />
             ) : (
-              <h1 className="text-4xl font-bold font-spacegrotesk text-center lg:text-right">{game.title}</h1>
+              <h1 className="text-4xl font-bold font-spacegrotesk text-center">{game.title}</h1>
             )}
 
             {game.authors && (

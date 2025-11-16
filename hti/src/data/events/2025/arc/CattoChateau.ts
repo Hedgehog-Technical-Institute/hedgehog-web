@@ -32,7 +32,7 @@ const thumbnail =
   "";
 
 
-const brief: string = `Catto Chateau is a non-linear metroidvania with ethereal vibes. Banish the Duchess's phantoms and other vile monsters as Mimo the ghost cat! Explore the haunted Chateau and uncover its many hidden treasures and secrets! Also test your feline reflexes and ghostly abilities in a variety of levels. Only you and Mimo can save the village from the Duchess's corruption.`;
+const brief: string = `Explore the haunted Chateau and uncover its many hidden treasures and secrets! Also test your feline reflexes and ghostly abilities in a variety of levels. Only you and Mimo can save the village from the Duchess's corruption.`;
 const description: string[] = [
   `Catto Chateau is a non-linear metroidvania with ethereal vibes. Banish the Duchess's phantoms and other vile monsters as Mimo the ghost cat! Explore the haunted Chateau and uncover its many hidden treasures and secrets! Also test your feline reflexes and ghostly abilities in a variety of levels. Only you and Mimo can save the village from the Duchess's corruption.`,
 ];

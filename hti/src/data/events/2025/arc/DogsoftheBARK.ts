@@ -34,8 +34,7 @@ const thumbnail =
 
 const brief: string = `The Tale of THE DARK. Follow Addie, a teenage girl left to her own devices, who gets dragged into a parallel realm by its former prince, Dexter. The two of them team up to return to the capital and reclaim the throne from the "tyrannical" king Jester.`;
 const description: string[] = [
-  `The Tale of THE DARK. Follow Addie, a teenage girl left to her own devices, who gets dragged into a parallel realm by its former prince, Dexter. The two of them team up to return to the capital and reclaim the throne from the "tyrannical" king Jester.`,
-  `Cain works as a barista at the local mall's Starbuzz franchisee. Due to requirements from higher Starbuzz management, his boss Sergio has to give Cain a week off work for the summer. Cain and Iddo have decided to create a list of activities to do over this week-long break... but you can probably guess that finishing that list is not going to be as simple as it seems.`
+  `The Tale of THE DARK. Follow Addie, a teenage girl left to her own devices, who gets dragged into a parallel realm by its former prince, Dexter. The two of them team up to return to the capital and reclaim the throne from the "tyrannical" king Jester.`
 ];
 const urls: GameUrls = {
   booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=183&sid=ec392933d1dff13ce14a938f65819794`,

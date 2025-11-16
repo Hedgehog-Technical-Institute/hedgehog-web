@@ -34,14 +34,18 @@ const thumbnail =
 
 const brief: string = `Save the world at full speed with your electromagnetic gadgets!​`;
 const description: string[] = [
-  `Catto Chateau is a non-linear metroidvania with ethereal vibes. Banish the Duchess's phantoms and other vile monsters as Mimo the ghost cat! Explore the haunted Chateau and uncover its many hidden treasures and secrets! Also test your feline reflexes and ghostly abilities in a variety of levels. Only you and Mimo can save the village from the Duchess's corruption.`,
+  `Ectorider is a fast-paced 3D platformer combining Extreme Sports and Third Person Shooter. Fight a robot army with your super magnet or use them to do insane tricks with your rollerblades. Save the Ectomorphs and stop Professor Ecto's evil plan.`,
+  `Use the powers of the super magnet to grab, throw, propell yourself at fullspeed, fly high in the air or smash robots into them.`,
+  `Dash, grind, and soar through levels on high-speed rollers. Chain tricks, wall-runs, and aerial stunts to keep your momentum flowing and your style sharp.`,
+  `Discover each enemies special ability, unlock new gadgets and combine them to find alternate paths into each levels.`,
+  `Humanity has been changed to Ectomorphs by the evil Professor Ektos! You must race at full speed around the world with your group of friends to find them, fight Ecto's robot army and turn them back into humans.`
 ];
 const urls: GameUrls = {
   booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=185&sid=ec392933d1dff13ce14a938f65819794`,
   steam: null,
   steamwishlist: 'https://store.steampowered.com/login/?redir=app/3970010',
   gamejolt: null,
-  itchio: null,
+  itchio: 'https://taldius.itch.io/ectorider-arcindie?secret=TLEO3gAMNtJKKFwL2Nr6qhiKp3o',
   gamebanana: null,
   website: null,
   portfolio: null,

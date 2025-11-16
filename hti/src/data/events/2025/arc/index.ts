@@ -19,6 +19,7 @@ import { CattoChateau } from "./CattoChateau";
 import { Ectorider } from "./Ectorider";
 import { StratoFreaks1Ultimate } from "./SuperFreaks1Ultimate.ts";
 import { SuperFreaksSide } from "./SuperFreaksSide";
+import { Apricity } from "./Apricity.ts";
 
 export const ARCINDIE2025 = new Event(
   "arcindie2025",
@@ -37,25 +38,26 @@ export const ARCINDIE2025 = new Event(
     "TREEHOUSELIVESTREAMURL"
   ],
   [
-    ShinkaTales,
+    Apricity,
     CainAndIddo,
-    CattoChateau,
-    VoidGrapplers,
-    HoneyBunny,
-    CollisionSystemTest,
-    Lyrestruck,
-    Ectorider,
-    Veredilia,
+    ShinkaTales,
     CubenenGardens,
-    ZafesAdventure,
-    StratoFreaks,
-    StratoFreaks1Ultimate,
     RileyRoadrunner,
-    DogsoftheBARK,
+    HoneyBunny,
     LorenzoDX,
-    SuperFreaksSide,
     RenegadeHero,
-
+    CattoChateau,
+    Veredilia,
+    ZafesAdventure,
+    DogsoftheBARK,
+    CollisionSystemTest,
+    Ectorider,
+    StratoFreaks,
+    Lyrestruck,
+    StratoFreaks1Ultimate,
+    VoidGrapplers,
+    SuperFreaksSide,
+    
 
 
   ]

@@ -89,8 +89,8 @@ const ARC25Layout = ({ data }: { data: EventModel }) => {
       <div className="max-w-6xl mx-auto flex flex-col gap-12 text-charcoal">
         {/* Hero Section */}
         <header className="flex flex-col gap-4">
-            <div className="mx-15 text-center px-1 bg-light border-4 border-arc rounded-b-4xl">
-          <div className="overflow-hidden mx-50 mt-5 mb-10 content-center text-center">
+            <div className="md:mx-15 text-center px-1 bg-light border-4 border-arc rounded-b-4xl">
+          <div className="overflow-hidden lg:mx-50 mt-5 mb-10 content-center text-center">
             <img
               src={data.media?.[0] ?? ""}
               alt="ArcIndie"

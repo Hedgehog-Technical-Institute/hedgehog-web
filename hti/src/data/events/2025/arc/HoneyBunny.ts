@@ -34,7 +34,8 @@ const thumbnail =
 
 const brief: string = `Honey Bunny is a low poly, late 90's inspired, 3d platformer. Help Honey Bunny stop the Cool Cats Gang from stealing the city's supply of cocktail cherries! Use her bunny ears to grab, throw and attack enemies!`;
 const description: string[] = [
-  `Honey Bunny is a low poly, late 90's inspired, 3d platformer. Help Honey Bunny stop the Cool Cats Gang from stealing the city's supply of cocktail cherries! Use her bunny ears to grab, throw and attack enemies!`,
+  `Honey Bunny is starting her shift at The Lucky Rabbit Casino when the Cool Cats, a local gang, invade and start stealing all the cocktail cherries! Chase them down across 10 exciting levels all over Starlight City! From a magic show to an underwater martini club to a relaxing Japanese garden, explore the venues Starlight City as to offer.`,
+  `Honey Bunny as been in development since 2022 and has a planned release date of Early 2026. This is the final SAGE demo before it releases on Steam. It is a 3D retro platformer inspired by: Sonic Adventure, Mystical Ninja Starring Goemon, and Ristar.`
 ];
 const urls: GameUrls = {
   booth: `https://hedgehogtechnicalinstitute.com/forum/viewtopic.php?t=206&sid=ec392933d1dff13ce14a938f65819794`,

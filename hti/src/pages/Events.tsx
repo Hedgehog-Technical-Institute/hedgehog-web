@@ -16,7 +16,7 @@ export default function Events() {
         <HeroVideo />
       </div> */}
 
-      <div className="min-w-100% text-center">
+      <div className="min-w-100% min-h-full text-center">
         {/* CGS */}
         <div className="bg-arc text-light flex items-center flex-col justify-center px-4 py-16"> 
           <Link
