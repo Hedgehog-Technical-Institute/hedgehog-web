@@ -27,7 +27,7 @@ export const ARCINDIE2025 = new Event(
   "2025's showcase is here!",
   2025,
   [
-    "Discover the world of indie games! Download and explore innovativetitles from emerging developers right now!",
+    "Discover the world of indie games! Download and explore innovative titles from emerging developers right now!",
     // "Check back throughout the event 8th - 15th for updates and streams."
   ],
   [
