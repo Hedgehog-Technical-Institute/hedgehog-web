@@ -1,13 +1,29 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../index.css"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+    
+  const location = useLocation();
+  const path = location.pathname;
+
+
+  let bgClass = "bg-ylw"; // default
+
+  if (path.startsWith("/events/cgs")) {
+    bgClass = "bg-cgs";
+  } else if (path.startsWith("/events/arcindie")) {
+    bgClass = "bg-arc";
+  } else if (path.startsWith("/events/cgs")) {
+    bgClass = "bg-cgs";
+  } else if (path.startsWith("/events/jam")) {
+    bgClass = "bg-jam";
+  }
 
   return (
     // pretty much copied and pasted from my portfolio site, will have to make adjustments as new HTI style is further realized - Nico/tm12
-    <nav className="sticky top-0 w-full bg-ylw text-light h-[7rem] z-50">
+    <nav className={`sticky top-0 w-full ${bgClass} text-light h-[7rem] z-50`}>
      <div className="flex items-center h-full w-full mx-auto px-5">
         {/* LEFT */} 
         <div className="ml-[3rem] transition-transform duration-200 hover:scale-105">
