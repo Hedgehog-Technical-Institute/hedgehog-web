@@ -74,7 +74,7 @@ export const DogsoftheBARK = new Game(
   icon,                         // icon
   ["Windows"],                  // platforms
   tags,                         // tags
-  "ArcIndie Build",                      // version
+  "v0.1.5.25",                      // version
   urls,                         // URLS
   false,                        // Is it featured?
   true,                         // Is there a Booth in the forums?
